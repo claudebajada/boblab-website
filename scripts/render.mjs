@@ -117,7 +117,7 @@ export function composePages(data) {
     },
     {
       route: '/our-team/', label: 'People', pageClass: 'people-page', description: 'Faculty, lab members, and alumni of BOB Lab at the University of Malta.',
-      body: `${intro('People', 'Our work brings together researchers in neuroimaging, engineering, cognitive science, and data protection law.')}
+      body: `${intro('People', 'We bring together people from different disciplines to work on questions about neuroimaging.')}
         <section class="wrap section people-section">${faculty.length ? `<h2>Faculty</h2><div class="people-grid">${faculty.map(person).join('')}</div><p class="portrait-credit meta">Faculty portraits from University of Malta profiles.</p>` : ''}
         ${members.length ? `<h2>Lab members</h2><div class="people-grid compact-people">${members.map(person).join('')}</div>` : ''}</section>
         <section class="alumni-section"><div class="wrap section"><div class="section-heading"><h2>Alumni</h2><p>Thank you to our former members for their contributions.</p></div>

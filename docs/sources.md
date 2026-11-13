@@ -201,4 +201,12 @@ Lab-supplied and approved four-panel cortical rendering, banner_5.png, 2257 × 4
 
 Lab-confirmed on 2026-11-13: Aitor Alberdi, Chelsea Adu-Domfeh, Maren Ona and
 Tonio Bezzina are former lab members. Valentina Camilleri is a current lab member
-with the role RSO 1. Reviewed 2026-11-13.
+with the role Research Support Officer I. Reviewed 2026-11-13.
+
+## owner-roles-2026-11-13
+
+Lab-confirmed roles, reviewed 2026-11-13: Sephora Galea, Research Support Officer II /
+PhD student; Valentina Camilleri, Research Support Officer I; Maria Jesus
+Mora-Coral, Scientific Officer; Nolan Vella, PhD Student and current lab member.
+The lab brings together people from different disciplines to work on questions
+about neuroimaging.
