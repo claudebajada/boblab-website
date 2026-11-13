@@ -74,3 +74,62 @@ test('research figures require accessible text, attribution and valid dimensions
   figure.width = 800;
   validateRecord('projects', project, `${project.id}.json`, new Set());
 });
+
+test('news policy rejects oversized summaries, galleries, link lists and invalid date ranges', async () => {
+  const record = await template('news');
+  const validate = () => validateRecord('news', record, `${record.id}.json`, new Set());
+  record.summary = [Array(80).fill('word').join(' ')];
+  validate();
+  record.summary[0] += ' extra';
+  assert.throws(validate, /80 words/);
+  record.summary = ['Short update.'];
+  record.title = 'A'.repeat(100);
+  validate();
+  record.title += 'B';
+  assert.throws(validate, /100 characters/);
+  record.title = 'Short title';
+  record.endDate = '2026-01-01';
+  assert.throws(validate, /end date/);
+  record.endDate = null;
+  record.links = Array(3).fill({ label: 'Source', url: 'https://example.com/' });
+  assert.throws(validate, /at most 2/);
+  record.links = [];
+  const photo = { src: '/media/example.webp', alt: 'Brain models on a table', caption: 'At the festival.', credit: 'Example photographer', width: 1200, height: 800 };
+  record.photos = Array(4).fill(photo);
+  assert.throws(validate, /at most 3 photos/);
+  record.photos = [{ ...photo, credit: '' }];
+  assert.throws(validate, /caption and credit/);
+  record.photos = [{ ...photo, src: 'https://example.com/photo.webp' }];
+  assert.throws(validate, /local photograph/);
+  record.photos = [{ ...photo, height: 0 }];
+  assert.throws(validate, /positive photo dimensions/);
+  record.photos = Array(3).fill(photo);
+  validate();
+});
+
+test('homepage caps combined news/events at three, sorts dates, and keeps older story URLs', async () => {
+  const example = await template('news');
+  const news = [
+    { ...example, id: 'oldest', date: '2025-01-01', draft: false },
+    { ...example, id: 'tie-b', date: '2026-11-01', draft: false },
+    { ...example, id: 'newest', date: '2026-11-07', endDate: '2026-11-08', draft: false },
+    { ...example, id: 'tie-a', date: '2026-11-01', draft: false },
+    { ...example, id: 'private-update', date: '2026-12-01', draft: true },
+  ];
+  news[2].photos = [1, 2, 3].map(i => ({ src: `/media/photo-${i}.webp`, alt: 'A brain model', caption: '<script>caption</script>', credit: 'A & B', width: 1200, height: 800 }));
+  const data = { site: { introduction: ['Research'], email: null }, people: [], projects: [], publications: [], news };
+  const pages = composePages(data);
+  const home = pages.find(p => p.route === '/').body;
+  assert.deepEqual([...home.matchAll(/<article id="([^"]+)"/g)].map(match => match[1]), ['newest', 'tie-a', 'tie-b']);
+  assert.equal((home.match(/class="news-photo/g) || []).length, 1);
+  assert.ok(!home.includes('photo-2.webp'));
+  assert.ok(!pages.some(p => p.route.includes('private-update')));
+  assert.ok(pages.some(p => p.route === '/news/oldest/'));
+  const detail = pages.find(p => p.route === '/news/newest/').body;
+  assert.equal((detail.match(/class="news-photo/g) || []).length, 3);
+  assert.match(detail, /&lt;script&gt;caption&lt;\/script&gt;/);
+  assert.match(detail, /A &amp; B/);
+  assert.match(detail, /7\s*–\s*8 November 2026/);
+  data.news = [];
+  assert.ok(!composePages(data)[0].body.includes('id="news-and-events"'));
+});

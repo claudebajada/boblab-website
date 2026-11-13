@@ -4,6 +4,25 @@ This register documents the published content and approved website assets. All
 material in this repository must be suitable for public access. Internal source
 records and editorial discussions are maintained separately.
 
+## sitc-amazing-animals-2026
+
+- https://scienceinthecity.org.mt/event/fur-ensic-files-cloned-11512/
+- Reviewed 2026-11-13. The organiser's Amazing Animals programme names Nate Rae
+  as artist and Claude Bajada as researcher, schedules the performance
+  and workshop for 6–7 November 2026, and describes interactive exploration of
+  animal intelligence. The URL retains an unrelated legacy slug; the page title
+  and content identify Amazing Animals. No precise workshop venue is asserted
+  because the organiser's listings differ.
+
+## owner-sitc-2026
+
+- Lab-confirmed on 2026-11-13: Claude Bajada co-presented the Amazing Animals
+  performance and workshop with Braintastic Science at Science in the City 2026.
+- The owner cleared all three supplied festival photographs for public website
+  use with credit to Elisa Von Brockdorf. Website copies are uncropped,
+  resized WebP files with private metadata removed. Original photographs and
+  correspondence are preserved outside the public repository.
+
 ## owner-brief
 
 Lab-approved site identity, audience, and editorial requirements. Reviewed 2026-11-12.

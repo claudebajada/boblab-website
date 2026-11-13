@@ -4,12 +4,13 @@ import { fileURLToPath } from 'node:url';
 
 export const root = fileURLToPath(new URL('../', import.meta.url));
 export const collections = ['people', 'projects', 'publications', 'news'];
+export const newsPolicy = Object.freeze({ homepageItems: 3, summaryWords: 80, titleCharacters: 100, photos: 3, links: 2 });
 const shared = ['id', 'draft', 'sourceIds', 'lastReviewed', 'links'];
 const fields = {
   people: ['name', 'role', 'group', 'years', 'bio', 'image', 'imageAlt'],
   projects: ['title', 'acronym', 'summary', 'status', 'startDate', 'endDate', 'category', 'publicationIds', 'shortTitle', 'figures'],
   publications: ['title', 'authors', 'year', 'venue', 'kind', 'doi'],
-  news: ['title', 'date', 'summary'],
+  news: ['title', 'date', 'endDate', 'summary', 'photos'],
 };
 function assert(ok, message) { if (!ok) throw new Error(message); }
 function text(value) { return typeof value === 'string' && value.trim().length > 0; }
@@ -89,6 +90,18 @@ export function validateRecord(kind, record, filename, sources) {
   } else {
     assert(text(record.title) && isDate(record.date) && strings(record.summary) && record.summary.length > 0,
       `${label}: title, date, and summary required`);
+    assert(record.title.length <= newsPolicy.titleCharacters, `${label}: title exceeds ${newsPolicy.titleCharacters} characters`);
+    assert(record.summary.join(' ').trim().split(/\s+/u).length <= newsPolicy.summaryWords,
+      `${label}: summary exceeds ${newsPolicy.summaryWords} words`);
+    assert(record.links.length <= newsPolicy.links, `${label}: at most ${newsPolicy.links} external/resource links`);
+    assert(record.endDate === null || (isDate(record.endDate) && record.endDate >= record.date), `${label}: invalid event end date`);
+    assert(Array.isArray(record.photos) && record.photos.length <= newsPolicy.photos, `${label}: at most ${newsPolicy.photos} photos`);
+    for (const photo of record.photos) {
+      keys(photo, ['src', 'alt', 'caption', 'credit', 'width', 'height'], label);
+      assert(localImage(photo.src) && !/\.(gif|svg)$/.test(photo.src) && text(photo.alt), `${label}: local photograph and alt text required`);
+      assert(text(photo.caption) && text(photo.credit), `${label}: photo caption and credit required`);
+      assert([photo.width, photo.height].every(n => Number.isInteger(n) && n > 0), `${label}: positive photo dimensions required`);
+    }
   }
 }
 async function checkPublicFiles(directory) {
@@ -135,7 +148,7 @@ export async function loadContent(projectRoot = root) {
       result[kind].push(record);
     }
   }
-  const figures = [site.homeImage, ...result.projects.flatMap(p => p.figures)].filter(Boolean);
+  const figures = [site.homeImage, ...result.projects.flatMap(p => p.figures), ...result.news.flatMap(n => n.photos)].filter(Boolean);
   for (const figure of figures) assert((await stat(path.join(projectRoot, 'public', figure.src))).isFile(), `${figure.src}: figure image missing`);
   const publicationIds = new Set(result.publications.filter(p => !p.draft).map(p => p.id));
   const dois = new Set();

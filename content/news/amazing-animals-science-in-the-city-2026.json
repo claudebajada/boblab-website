@@ -1,0 +1,47 @@
+{
+  "id": "amazing-animals-science-in-the-city-2026",
+  "draft": false,
+  "sourceIds": [
+    "sitc-amazing-animals-2026",
+    "owner-sitc-2026"
+  ],
+  "lastReviewed": "2026-11-13",
+  "links": [
+    {
+      "label": "View the festival programme",
+      "url": "https://scienceinthecity.org.mt/event/fur-ensic-files-cloned-11512/"
+    }
+  ],
+  "title": "Amazing Animals at Science in the City",
+  "date": "2026-11-06",
+  "endDate": "2026-11-07",
+  "summary": [
+    "Claude co-presented the Amazing Animals performance and workshop with Braintastic Science at Science in the City 2026. Families explored animal intelligence and the different ways brains solve problems through interactive challenges and hands-on activities."
+  ],
+  "photos": [
+    {
+      "src": "/media/events/amazing-animals-brain-models.webp",
+      "alt": "Colourful brain models of different sizes arranged on a table under blue stage lighting.",
+      "caption": "Brain models at Amazing Animals.",
+      "credit": "Photo: Elisa Von Brockdorf",
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "src": "/media/events/amazing-animals-claude-bajada.webp",
+      "alt": "Claude wearing a headset microphone and holding a small model during the performance.",
+      "caption": "Claude during the performance.",
+      "credit": "Photo: Elisa Von Brockdorf",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "src": "/media/events/amazing-animals-festival.webp",
+      "alt": "Science in the City sign in the foreground, with a presenter and brain models out of focus behind it.",
+      "caption": "Science in the City brings brain science to the stage.",
+      "credit": "Photo: Elisa Von Brockdorf",
+      "width": 1440,
+      "height": 960
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { collections } from './content.mjs';
+import { collections, newsPolicy } from './content.mjs';
 
 export function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -32,6 +32,14 @@ const projectTeaser = p => {
   return teaser.charAt(0).toUpperCase() + teaser.slice(1);
 };
 const projectUrl = p => `/projects/${p.id}/`;
+const newsUrl = n => `/news/${n.id}/`;
+const newsDate = n => n.endDate && n.endDate !== n.date
+  ? new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).formatRange(new Date(`${n.date}T12:00:00Z`), new Date(`${n.endDate}T12:00:00Z`))
+  : date(n.date);
+const newsTime = n => `<p class="meta news-date"><time datetime="${e(n.date)}">${e(newsDate(n))}</time></p>`;
+function newsPhoto(photo, lead = false) {
+  return `<figure class="news-photo${lead ? ' news-lead-photo' : ''}"><img src="${e(photo.src)}" alt="${e(photo.alt)}" width="${photo.width}" height="${photo.height}" loading="lazy"><figcaption>${e(photo.caption)} <span class="photo-credit">${e(photo.credit)}</span></figcaption></figure>`;
+}
 const statusLabel = p => ({ active: 'Current project', completed: 'Completed project', resource: 'Research resource', programme: 'Research collaboration' }[p.status]);
 const date = value => new Date(`${value}T12:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 const projectDates = p => p.startDate ? `${date(p.startDate)}${p.endDate ? ` to ${date(p.endDate)}` : ' onwards'}` : p.endDate ? `Ended ${date(p.endDate)}` : '';
@@ -82,6 +90,8 @@ export function composePages(data) {
   const { site } = data;
   const published = Object.fromEntries(collections.map(kind => [kind, data[kind].filter(item => !item.draft)]));
   const { people, projects, publications, news } = published;
+  const updates = [...news].sort((a, b) => b.date.localeCompare(a.date) || byName('id')(a, b));
+  const recentUpdates = updates.slice(0, newsPolicy.homepageItems);
   const faculty = people.filter(p => p.group === 'faculty').sort(byName('name'));
   const members = people.filter(p => p.group === 'current').sort(byName('name'));
   const alumni = people.filter(p => p.group === 'alumni').sort(byName('name'));
@@ -113,7 +123,7 @@ export function composePages(data) {
       <section class="wrap section"><div class="section-heading"><h2>Recent research</h2><a class="inline-link" href="/publications/">Publications and outputs ${arrow}</a></div>${featuredPaper ? paper(featuredPaper, 3) : ''}
         <div class="tool-strip"><div><h3>The Vogt-Bailey toolbox</h3><p>Open-source tools for measuring local gradients and boundaries in MRI data.</p></div><a class="inline-link" href="${sourceCode}">View the code ${arrow}</a></div>
       </section>
-      ${news.length ? `<section class="story-section"><div class="wrap section story-layout"><h2>Public engagement</h2><div>${news.map(n => `<article id="${e(n.id)}"><h3>${e(n.title)}</h3>${paragraphs(n.summary)}${links(n.links)}<p class="meta"><time datetime="${e(n.date)}">${e(date(n.date))}</time></p></article>`).join('')}</div></div></section>` : ''}`,
+      ${recentUpdates.length ? `<section class="story-section" id="news-and-events"><div class="wrap section story-layout"><h2>News and events</h2><div class="news-list">${recentUpdates.map(n => `<article id="${e(n.id)}"><h3><a href="${newsUrl(n)}">${e(n.title)}</a></h3>${newsTime(n)}${n.photos.length ? newsPhoto(n.photos[0], true) : ''}${paragraphs(n.summary)}<a class="inline-link" href="${newsUrl(n)}">${n.photos.length ? 'Event story and photographs' : 'Read the update'} ${arrow}</a></article>`).join('')}</div></div></section>` : ''}`,
     },
     {
       route: '/our-team/', label: 'People', pageClass: 'people-page', description: 'Faculty, lab members, and alumni of BOB Lab at the University of Malta.',
@@ -151,7 +161,13 @@ export function composePages(data) {
       <div class="contact-place"><h2>University of Malta</h2><p>Department of Physiology and Biochemistry<br>Faculty of Medicine and Surgery<br>University of Malta<br>Msida, Malta</p><a class="inline-link" href="https://www.um.edu.mt/profile/claudebajada">University contact details ${arrow}</a></div></section>`,
     },
   ];
-  return [...pages, ...projects.map(p => {
+  return [...pages, ...updates.map(n => ({
+    route: newsUrl(n), navigationRoute: '/', label: n.title, pageClass: 'news-page', description: n.summary[0],
+    body: `<div class="wrap project-breadcrumb"><a href="/#news-and-events">${arrow} News and events</a></div>
+      ${intro(e(n.title), '')}
+      <section class="wrap section news-story" aria-label="Update">${newsTime(n)}${paragraphs(n.summary)}${links(n.links)}</section>
+      ${n.photos.length ? `<section class="wrap section news-gallery" aria-label="Event photographs">${n.photos.map(photo => newsPhoto(photo)).join('')}</section>` : ''}`,
+  })), ...projects.map(p => {
     const related = (p.publicationIds || []).map(id => papers.find(paper => paper.id === id)).filter(Boolean);
     return {
       route: projectUrl(p), navigationRoute: '/projects/', label: projectName(p), pageClass: 'project-page', description: p.summary[0],

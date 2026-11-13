@@ -32,7 +32,7 @@ references and structure; it cannot establish truth, consent, or image rights.
 | `people` | `name`, `role`, `group` (`faculty`/`current`/`alumni`), `years` (text/null), `bio` (paragraphs), `image` (local `/media/…` path/null), `imageAlt` (text/null) |
 | `projects` | `title`, `acronym` (text/null), `summary` (paragraphs), `status` (`active`/`programme`/`completed`/`resource`), `category` (`research`/`policy`/`education`/`collaboration`/`resource`), `shortTitle` (text/null), `figures` (credited image objects), `publicationIds` (public publication IDs), `startDate`, `endDate` (ISO dates/null) |
 | `publications` | `title`, `authors` (ordered list), `year` (integer), `venue`, `kind` (`journal`/`preprint`/`conference`/`software`/`dataset`/`policy`), `doi` (DOI string/null) |
-| `news` | `title`, `date` (ISO date), `summary` (paragraphs) |
+| `news` | `title`, `date` (ISO date), `endDate` (ISO date/null), `summary` (paragraphs), `photos` (up to three credited photograph objects) |
 
 Alumni images are rejected. Current images need useful alt text and a source/
 permission note in the source register. Empty optional paragraphs/links are fine;
@@ -50,6 +50,36 @@ projects make no active/completed claim. Each public project gets a local
 `/projects/<id>/` page. Categories distinguish cluster collaborations; resources
 and completed work have separate sections. Publication references must resolve
 to public records, and duplicate public DOIs fail validation. News is dated rather than presented as a current announcement.
+
+## News and events policy
+
+Keep the homepage brief: show **at most three** approved updates, newest first
+by `date`, with the ID as a stable tie-breaker. The limit applies across news and
+events combined, not three of each. Drafts never use a slot. Do not add an
+expanding feed, carousel, or automatic archive listing. Older approved updates
+retain their individual `/news/<id>/` URLs and public source records when they
+leave the homepage; adding a fourth update does not delete an earlier story.
+
+Each update has a title of at most 100 characters, a summary of at most **80
+words**, at most **two resource links**, and at most **three photographs**. These
+limits are enforced by validation; the renderer enforces the three-item homepage
+limit. The homepage uses only the first photograph and links to the individual
+update for its full gallery and resource links. Leave `photos` empty for a
+text-only update. Keep one record per event rather than one per session or photo.
+
+Use `date` for the event's first day, or the publication date for a news update.
+Use `endDate` for a verified event range; otherwise use null. Never substitute
+the date of an email for an unknown event date. Revisit the selection whenever
+adding an update and review it annually for relevance and broken links; there
+is no unattended deletion or private-source synchronisation.
+
+Every photograph has exactly `src`, `alt`, `caption`, `credit`, `width`, and
+`height`. Use an approved local JPEG, PNG, WebP, or AVIF, useful alt text, a
+factual caption, visible credit, and positive pixel dimensions. Archive originals
+outside the repository, strip private metadata, and normally keep website copies
+below 200 KB with a maximum 1600-pixel long edge. Permission and public provenance
+belong in the source and asset registers. The update's `sourceIds` cover its
+photographs as well as its facts. Missing local photographs fail the build.
 
 ## Site settings
 

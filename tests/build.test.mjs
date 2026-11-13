@@ -57,6 +57,11 @@ test('all collections build publicly while drafts and source files stay outside 
     assert.ok(pagesHtml.includes('src="/boblab-website/media/bob-logo-colour.png"'));
     assert.ok(pagesHtml.includes('src="/boblab-website/media/research/brain-tractography.gif"'));
     assert.ok(pagesHtml.includes('src="/boblab-website/media/brand/banner-5.png"'));
+    assert.ok(pagesHtml.includes('src="/boblab-website/media/events/amazing-animals-brain-models.webp"'));
+    const eventHtml = await readFile(path.join(output, 'news/amazing-animals-science-in-the-city-2026/index.html'), 'utf8');
+    assert.ok(eventHtml.includes('src="/boblab-website/media/events/amazing-animals-claude-bajada.webp"'));
+    assert.ok(eventHtml.includes('href="/boblab-website/#news-and-events"'));
+    assert.ok(!eventHtml.includes('href="/news/'));
     assert.ok(pagesHtml.includes('src="/boblab-website/media/research/legacy-brain-still.webp"'));
     assert.ok(pagesHtml.includes('href="/boblab-website/projects/"'));
     const prefixedDetail = await readFile(path.join(output, 'projects/example-project/index.html'), 'utf8');
@@ -89,6 +94,14 @@ test('all collections build publicly while drafts and source files stay outside 
     await writeFile(path.join(fixture, 'content/publications/duplicate-doi.json'), JSON.stringify(duplicate));
     await assert.rejects(loadContent(fixture), /Duplicate public DOI/);
     await rm(path.join(fixture, 'content/publications/duplicate-doi.json'));
+    const eventPath = path.join(fixture, 'content/news/amazing-animals-science-in-the-city-2026.json');
+    const event = JSON.parse(await readFile(eventPath, 'utf8'));
+    const approvedPhoto = event.photos[0].src;
+    event.photos[0].src = '/media/missing-event-photo.webp';
+    await writeFile(eventPath, JSON.stringify(event));
+    await assert.rejects(loadContent(fixture), /ENOENT/);
+    event.photos[0].src = approvedPhoto;
+    await writeFile(eventPath, JSON.stringify(event));
     site.homeBanner.src = '/media/../private.png';
     await writeFile(sitePath, JSON.stringify(site));
     await assert.rejects(loadContent(fixture), /local image and alt text/);

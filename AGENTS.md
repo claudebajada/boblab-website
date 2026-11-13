@@ -49,6 +49,10 @@ prepared for later publication. Preview mode disables indexing, not public acces
 - Keep sourceIds and lastReviewed current. Record public evidence in docs/sources.md.
   Preserve author order, full surnames, metadata, public links, and licence credits.
   Never invent roles, dates, funding status, recruitment openings, or research claims.
+- Follow the news/events policy in docs/content-model.md: at most three homepage
+  updates combined, newest first; 80 summary words, two resource links and three
+  credited photos per update. Use only the lead photo on the homepage and retain
+  older update URLs when they leave the homepage.
 - Verify current membership with the owner. Faculty is a content group, not a
   claim that all members lead the lab. Alumni use compact text lists without portraits.
   Current portraits are optional and require approved sources.
@@ -56,6 +60,9 @@ prepared for later publication. Preview mode disables indexing, not public acces
   Long publication previews use "et al." and retain the expandable full author list.
 - Use clear English for public visitors. Keep editorial discussions and processing
   history outside public copy. Do not add full-size image links or duplicate actions.
+- Use Claude in news, event reports and casual narrative copy, as requested by
+  the owner on 2026-11-13. Preserve formal names in publication metadata and
+  official people listings.
 - Public image origins and permissions are in docs/sources.md and
   docs/asset-provenance.json. Archive supplied originals outside the repository.
   Remove private metadata from approved public copies and preserve scientific labels,

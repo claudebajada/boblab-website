@@ -3,8 +3,12 @@
   "draft": true,
   "title": "Replace with a verified update",
   "date": "2026-11-11",
-  "summary": ["Replace with a short public update."],
+  "summary": [
+    "Replace with a short public update."
+  ],
   "links": [],
   "sourceIds": [],
-  "lastReviewed": "2026-11-11"
+  "lastReviewed": "2026-11-11",
+  "endDate": null,
+  "photos": []
 }
