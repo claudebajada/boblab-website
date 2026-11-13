@@ -1,0 +1,28 @@
+{
+  "id": "amrita",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "amrita-public"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "University project description",
+      "url": "https://euraxess.ec.europa.eu/jobs/478480"
+    }
+  ],
+  "title": "High-Accuracy, Real-Time Optimal-Gridding and Uncertainty-Aware Reconstruction Algorithms: from Radio-Astronomy Imaging to Medical Imaging (MRI)",
+  "acronym": "AMRITA",
+  "status": "active",
+  "category": "research",
+  "startDate": "2026-11-01",
+  "endDate": null,
+  "summary": [
+    "AMRITA develops image reconstruction algorithms for radio astronomy and MRI.",
+    "The project studies how to reconstruct images from non-uniformly sampled data using GPU computation and methods that estimate uncertainty. John Abela leads the project, with Claude Bajada as co-investigator. Xjenza Malta supports it through the Digital Innovation Programme 2026."
+  ],
+  "publicationIds": [],
+  "shortTitle": null,
+  "figures": []
+}

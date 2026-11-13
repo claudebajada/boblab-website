@@ -1,0 +1,29 @@
+{
+  "id": "bob",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Vogt-Bailey toolbox",
+      "url": "https://github.com/VBIndex/py_vb_toolbox"
+    }
+  ],
+  "title": "Boundaries of the Brain",
+  "acronym": "BOB",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2021-02-01",
+  "endDate": "2022-01-31",
+  "summary": [
+    "BOB studied how local changes in MRI measurements can help describe the boundaries between brain regions.",
+    "The project developed the Vogt-Bailey toolbox and examined how mapping functional MRI data onto the cortical surface affects the measurements."
+  ],
+  "publicationIds": [
+    "volume-to-surface-2022"
+  ],
+  "shortTitle": null,
+  "figures": []
+}

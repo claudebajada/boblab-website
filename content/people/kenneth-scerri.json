@@ -1,0 +1,25 @@
+{
+  "id": "kenneth-scerri",
+  "draft": false,
+  "sourceIds": [
+    "um-kenneth-profile",
+    "legacy-people",
+    "um-profile-portraits"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "University profile",
+      "url": "https://www.um.edu.mt/profile/kennethscerri"
+    }
+  ],
+  "name": "Kenneth Scerri",
+  "role": "Principal investigator, Associate Professor",
+  "group": "faculty",
+  "years": null,
+  "bio": [
+    "Kenneth works on signal processing, systems modelling, and machine learning for neuroimaging."
+  ],
+  "image": "/media/research/kenneth-scerri.jpg",
+  "imageAlt": "Portrait of Kenneth Scerri"
+}

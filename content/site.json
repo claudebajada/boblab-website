@@ -1,0 +1,30 @@
+{
+  "name": "BOB Lab",
+  "expandedName": "Boundaries of the Brain laboratory",
+  "institution": "University of Malta",
+  "description": "Neuroimaging, brain organisation, and research data policy at the University of Malta.",
+  "introduction": [
+    "We use MRI to study brain regions, their connections, and gradual changes in brain structure and function.",
+    "Our projects bring together medicine, engineering, cognitive science and law."
+  ],
+  "stage": "live",
+  "origin": "https://claudebajada.github.io",
+  "email": "claude.bajada@um.edu.mt",
+  "sourceIds": [
+    "legacy-home",
+    "um-claude-profile",
+    "owner-update",
+    "owner-content-audit",
+    "disc-cluster",
+    "legacy-brain-visual",
+    "supplied-banner-5"
+  ],
+  "lastReviewed": "2026-11-13",
+  "homeImage": null,
+  "homeBanner": {
+    "src": "/media/brand/banner-5.png",
+    "alt": "Four cortical surface renderings in greyscale and different colour maps.",
+    "width": 2257,
+    "height": 420
+  }
+}

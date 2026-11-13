@@ -1,0 +1,25 @@
+{
+  "id": "maite",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "public-datasets"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Multicolor Anatomical Imaging and Tractography for Education",
+  "acronym": "M.A.I.T.E.",
+  "status": "resource",
+  "category": "education",
+  "startDate": null,
+  "endDate": null,
+  "summary": [
+    "M.A.I.T.E. combines structural MRI and diffusion tractography to make multicolour 3D-printable brain models for education.",
+    "This separate internship project involving Mondragon University produced a public dataset with ready-to-print resources and a reproducible workflow. The dataset acknowledges DISC support."
+  ],
+  "publicationIds": [
+    "maite-dataset-2026"
+  ],
+  "shortTitle": null,
+  "figures": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "example-person",
+  "draft": true,
+  "name": "Replace with public name",
+  "role": "Replace with verified role",
+  "group": "current",
+  "years": null,
+  "bio": [],
+  "image": null,
+  "imageAlt": null,
+  "links": [],
+  "sourceIds": [],
+  "lastReviewed": "2026-11-11"
+}

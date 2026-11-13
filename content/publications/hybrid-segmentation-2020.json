@@ -1,0 +1,26 @@
+{
+  "id": "hybrid-segmentation-2020",
+  "draft": false,
+  "sourceIds": [
+    "hybrid-segmentation"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Read the conference output",
+      "url": "https://www.um.edu.mt/library/oar/handle/123456789/59839"
+    }
+  ],
+  "title": "Hybrid surface-volume segmentation for improved anatomically-constrained tractography",
+  "authors": [
+    "Robert Smith",
+    "Antonin Skoch",
+    "Claude J. Bajada",
+    "Svenja Caspers",
+    "Alan Connelly"
+  ],
+  "year": 2020,
+  "venue": "OHBM Annual Meeting, abstract and poster",
+  "kind": "conference",
+  "doi": null
+}

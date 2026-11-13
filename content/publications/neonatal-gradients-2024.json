@@ -1,0 +1,34 @@
+{
+  "id": "neonatal-gradients-2024",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Feature similarity gradients detect alterations in the neonatal cortex associated with preterm birth",
+  "authors": [
+    "Paola Galdi",
+    "Manuel Blesa Cabez",
+    "Christine Farrugia",
+    "Kadi Vaher",
+    "Logan Z. J. Williams",
+    "Gemma Sullivan",
+    "David Q. Stoye",
+    "Alan J. Quigley",
+    "Antonios Makropoulos",
+    "Michael J. Thrippleton",
+    "Mark E. Bastin",
+    "Hilary Richardson",
+    "Heather Whalley",
+    "A. David Edwards",
+    "Claude J. Bajada",
+    "Emma C. Robinson",
+    "James P. Boardman"
+  ],
+  "year": 2024,
+  "venue": "Human Brain Mapping",
+  "kind": "journal",
+  "doi": "10.1002/hbm.26660"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "mireille-sant",
+  "draft": false,
+  "sourceIds": [
+    "owner-content-audit",
+    "um-mireille-profile",
+    "disc-cluster",
+    "um-profile-portraits"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "University profile",
+      "url": "https://www.um.edu.mt/profile/mireillecaruana"
+    },
+    {
+      "label": "DISC cluster",
+      "url": "https://www.um.edu.mt/clusters/disc/"
+    }
+  ],
+  "name": "Mireille-Martine Sant",
+  "role": "Collaborator, Associate Professor in technology law",
+  "group": "faculty",
+  "years": null,
+  "bio": [
+    "Mireille works on privacy, data protection, and technology law at the University of Malta. She chairs the Data Integrity and Stewardship Cluster.",
+    "She collaborates with the lab on the legal and policy questions around sharing neuroimaging data for research."
+  ],
+  "image": "/media/research/mireille-sant.jpg",
+  "imageAlt": "Portrait of Mireille-Martine Sant"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "marc",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Measuring the Architecture of Consciousness",
+  "acronym": "MARC",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2022-07-01",
+  "endDate": "2023-07-31",
+  "summary": [
+    "MARC developed MRI processing methods for studying brain architecture and consciousness.",
+    "Work included quantitative MRI pipelines and a travelling-heads study, in which the same people undergo scanning at different sites to test measurement consistency."
+  ],
+  "publicationIds": [],
+  "shortTitle": null,
+  "figures": []
+}

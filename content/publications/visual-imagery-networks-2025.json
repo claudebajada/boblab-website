@@ -1,0 +1,27 @@
+{
+  "id": "visual-imagery-networks-2025",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Neural network topologies supporting individual variations in vividness of visual imagery",
+  "authors": [
+    "Timo L. Kvamme",
+    "Massimo Lumaca",
+    "Claude J. Bajada",
+    "Signe Dall Gregersen",
+    "Justyna Hobot",
+    "Dunja Paunovic",
+    "Michal Wierzchon",
+    "Blanka Zana",
+    "Juha Silvanto",
+    "Kristian Sandberg"
+  ],
+  "year": 2025,
+  "venue": "NeuroImage",
+  "kind": "journal",
+  "doi": "10.1016/j.neuroimage.2025.121520"
+}

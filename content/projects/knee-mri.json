@@ -1,0 +1,25 @@
+{
+  "id": "knee-mri",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "public-datasets"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "A Comparative Multiparametric MRI Evaluation of Morphological Sequences, T2 Mapping, and Diffusion Imaging for the Characterisation of Healthy Knee Cartilage",
+  "acronym": null,
+  "status": "resource",
+  "category": "research",
+  "startDate": null,
+  "endDate": null,
+  "summary": [
+    "This supervised MSc Medical Physics study compared MRI methods for examining healthy knee cartilage.",
+    "The work includes morphological imaging, T2 mapping, and diffusion imaging. Its dataset has a public catalogue on drUM. Access to the underlying files is controlled."
+  ],
+  "publicationIds": [
+    "knee-mri-dataset-2026"
+  ],
+  "shortTitle": "MRI of healthy knee cartilage",
+  "figures": []
+}

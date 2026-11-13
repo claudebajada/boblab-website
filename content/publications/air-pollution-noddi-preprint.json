@@ -1,0 +1,33 @@
+{
+  "id": "air-pollution-noddi-preprint",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Impact of air pollution on Neurite Orientation Dispersion and Density metrics (NODDI) in 10–13-year-old children with and without ADHD diagnosis",
+  "authors": [
+    "Paulina Lewandowska",
+    "Claude J. Bajada",
+    "Mikołaj Compa",
+    "Yarema Mysak",
+    "Aleksandra Domagalik",
+    "Bartosz Kossowski",
+    "Clemens Baumbach",
+    "Katarzyna Kaczmarek-Majer",
+    "Anna Degórska",
+    "Krzysztof Skotak",
+    "Katarzyna Sitnik-Warchulska",
+    "Małgorzata Lipowska",
+    "Bernadetta Izydorczyk",
+    "James Grellier",
+    "Iana Markevych",
+    "Marcin Szwed"
+  ],
+  "year": 2025,
+  "venue": "bioRxiv",
+  "kind": "preprint",
+  "doi": "10.1101/2025.11.03.686321"
+}

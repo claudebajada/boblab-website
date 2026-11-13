@@ -1,0 +1,23 @@
+{
+  "id": "volume-to-surface-2022",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Geometric effects of volume-to-surface mapping of fMRI data",
+  "authors": [
+    "Keith George Ciantar",
+    "Christine Farrugia",
+    "Paola Galdi",
+    "Kenneth Scerri",
+    "Ting Xu",
+    "Claude J. Bajada"
+  ],
+  "year": 2022,
+  "venue": "Brain Structure and Function",
+  "kind": "journal",
+  "doi": "10.1007/s00429-022-02536-4"
+}

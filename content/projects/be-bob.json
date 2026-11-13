@@ -1,0 +1,41 @@
+{
+  "id": "be-bob",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "reused-research-figures"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Vogt-Bailey toolbox",
+      "url": "https://github.com/VBIndex/py_vb_toolbox"
+    }
+  ],
+  "title": "Beyond the Boundaries of the Brain",
+  "acronym": "BE-BOB",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2022-01-03",
+  "endDate": "2024-01-02",
+  "summary": [
+    "BE-BOB extended the lab's work on local gradients in brain organisation.",
+    "The project developed and tested the Vogt-Bailey Index, including validation with autism neuroimaging data."
+  ],
+  "publicationIds": [
+    "local-gradient-vb-index-2024"
+  ],
+  "shortTitle": null,
+  "figures": [
+    {
+      "src": "/media/research/vb-boundary-figure-5.png",
+      "alt": "Cortical maps and histograms compare local homogeneity estimates from ReHo on the left and the Vogt-Bailey Index on the right, with each colour scale retained.",
+      "caption": "Local homogeneity estimates using ReHo and the Vogt-Bailey Index. These maps demonstrate the methods. Interpolation can introduce artefacts, so the maps should not be used to infer motor-task activation.",
+      "credit": "Farrugia et al. (2024), Figure 5, Brain Structure and Function.",
+      "sourceUrl": "https://link.springer.com/article/10.1007/s00429-023-02751-7/figures/5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "width": 1500,
+      "height": 625
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "reviewed": "2026-11-12",
+  "permission": "BOB Lab authorised reuse of legacy imagery and UM profile headshots. The three paper figures are CC BY 4.0. Logos and banner are lab-supplied approved assets.",
+  "assets": [
+    {
+      "file": "/media/research/claude-julien-bajada.jpg",
+      "sourcePage": "https://www.um.edu.mt/profile/claudebajada",
+      "sourceUrl": "https://www.um.edu.mt/profile/image/claudebajada",
+      "credit": "University of Malta profile, owner-authorised reuse",
+      "changes": "Uncropped original image, with source metadata embedded in the website copy.",
+      "websiteSha256": "facc77e1d80547486231da16907826e16e521b3af62bccd764b180c2b426a588",
+      "provenanceStorage": "embedded"
+    },
+    {
+      "file": "/media/research/kenneth-scerri.jpg",
+      "sourcePage": "https://www.um.edu.mt/profile/kennethscerri",
+      "sourceUrl": "https://www.um.edu.mt/profile/image/kennethscerri",
+      "credit": "University of Malta profile, owner-authorised reuse",
+      "changes": "Uncropped original image, with source metadata embedded in the website copy.",
+      "websiteSha256": "6112e4025033a7c70f7fa505ae10289dc6c698c1b4f52e52dd584405af5348a7",
+      "provenanceStorage": "embedded"
+    },
+    {
+      "file": "/media/research/mireille-sant.jpg",
+      "sourcePage": "https://www.um.edu.mt/profile/mireillecaruana",
+      "sourceUrl": "https://www.um.edu.mt/profile/image/mireillecaruana",
+      "credit": "University of Malta profile, owner-authorised reuse",
+      "changes": "Uncropped original image, with source metadata embedded in the website copy.",
+      "websiteSha256": "c397f8b595e320d5853994176eda453c2aa8ac579bae1e44b06ab98b6bf5154f",
+      "provenanceStorage": "embedded"
+    },
+    {
+      "file": "/media/research/sign-figure-1.jpg",
+      "sourcePage": "https://www.biorxiv.org/content/10.64898/2026.04.15.717370v2.full-text",
+      "sourceUrl": "https://www.biorxiv.org/content/biorxiv/early/2026/09/08/2026.04.15.717370/F1.large.jpg",
+      "credit": "Sephora Galea, Brandon C. Seychell, Paola Galdi, Therese Hunter and Claude J. Bajada; CC BY 4.0",
+      "changes": "Uncropped original image, with source metadata embedded in the website copy.",
+      "websiteSha256": "fe36897081f66729c1fd6299c3231340392e341714a0b1c0c7dbfb756f3f0541",
+      "provenanceStorage": "embedded"
+    },
+    {
+      "file": "/media/research/brian-figure-1.jpg",
+      "sourcePage": "https://www.biorxiv.org/content/10.64898/2026.07.30.741684v1.full-text",
+      "sourceUrl": "https://www.biorxiv.org/content/biorxiv/early/2026/08/04/2026.07.30.741684/F1.large.jpg",
+      "credit": "Aitor Alberdi Escudero, Kenneth Scerri, Andrew Sammut and Claude J. Bajada; CC BY 4.0",
+      "changes": "Uncropped original image, with source metadata embedded in the website copy.",
+      "websiteSha256": "3a1f61a0dece32c4208cf796092f6721af7f9b9239cc82c5dbad30a18710321c",
+      "provenanceStorage": "embedded"
+    },
+    {
+      "file": "/media/research/vb-boundary-figure-5.png",
+      "sourcePage": "https://link.springer.com/article/10.1007/s00429-023-02751-7/figures/5",
+      "sourceUrl": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00429-023-02751-7/MediaObjects/429_2023_2751_Fig5_HTML.png",
+      "credit": "Christine Farrugia, Paola Galdi, Irati Arenzana Irazu, Kenneth Scerri and Claude J. Bajada; CC BY 4.0",
+      "changes": "Uncropped original image, with source metadata embedded in the website copy.",
+      "websiteSha256": "7fe906b11f87b7821d3c13447630d4bbffdf9ccc36e897252e427f6412d4cb58",
+      "provenanceStorage": "embedded"
+    },
+    {
+      "file": "/media/research/legacy-brain-still.webp",
+      "sourcePage": "https://boblab.info/",
+      "sourceUrl": "https://boblab.info/wp-content/uploads/2024/04/web_brain_small.gif",
+      "credit": "BOB Lab, owner-authorised reuse",
+      "changes": "Extracted zero-based frame 29 as a static, lossless WebP. Used when reduced motion is preferred.",
+      "websiteSha256": "906642fe9375f557f894d5129475f79b1757e705a477ec70dd9699f3c428a01b",
+      "provenanceStorage": "companion JSON",
+      "provenanceFile": "/media/research/legacy-brain-still.webp.json"
+    },
+    {
+      "file": "/media/research/brain-tractography.gif",
+      "sourcePage": "https://boblab.info/",
+      "sourceUrl": "https://boblab.info/wp-content/uploads/2024/04/web_brain_small.gif",
+      "credit": "BOB Lab, owner-authorised reuse",
+      "changes": "Unmodified original GIF, with a separate static fallback for reduced-motion preference. No playback control, as requested by the owner.",
+      "websiteSha256": "6fad95d9eabeb79964c766dde1653f3cb19038e9b8c967c3d2c3a17dbd010689",
+      "provenanceStorage": "companion JSON",
+      "provenanceFile": "/media/research/brain-tractography.gif.json"
+    },
+    {
+      "file": "/media/bob-logo-colour.png",
+      "source": "BOB Lab supplied BOBLab_Col.png",
+      "credit": "BOB Lab logo, approved website use",
+      "changes": "Original image pixels preserved; website presentation uses CSS.",
+      "websiteSha256": "b8304b6f65eea117b98fc13ff7043d0b92f40cd4573efa614841df28f2e9c3cc",
+      "provenanceStorage": "embedded PNG text"
+    },
+    {
+      "file": "/media/bob-logo-white.png",
+      "source": "BOB Lab supplied BOBLab_Wht.png",
+      "credit": "BOB Lab logo, approved website use",
+      "changes": "Original image pixels preserved; website presentation uses CSS.",
+      "websiteSha256": "dc2df12797ea518071fc2497b0aff8293e04434d39303c2242f32c71bef2eaa2",
+      "provenanceStorage": "embedded PNG text"
+    },
+    {
+      "file": "/media/brand/banner-5.png",
+      "source": "BOB Lab supplied banner_5.png",
+      "credit": "BOB Lab cortical renderings, approved website use",
+      "changes": "Original image pixels preserved; website presentation uses CSS.",
+      "websiteSha256": "91136b9f1269bbacfb4279038736014a52197a87563d7fd3d1f6295602267b2c",
+      "provenanceStorage": "embedded PNG text"
+    }
+  ]
+}

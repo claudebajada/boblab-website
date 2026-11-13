@@ -1,0 +1,30 @@
+{
+  "id": "padme",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "DISC cluster",
+      "url": "https://www.um.edu.mt/clusters/disc/"
+    }
+  ],
+  "title": "Protection of Data in Medical Research",
+  "acronym": "PaDME",
+  "status": "completed",
+  "category": "policy",
+  "startDate": "2023-11-01",
+  "endDate": "2025-04-30",
+  "summary": [
+    "PaDME examined how data protection law applies to medical research and data sharing.",
+    "The work included a draft Maltese research data protection framework, data-sharing tools, engagement with the Information and Data Protection Commissioner, and a Brainhack workshop on the GDPR. This line of work continues through DISC."
+  ],
+  "publicationIds": [
+    "gdpr-open-neuroimaging-2025",
+    "open-science-gdpr-2025"
+  ],
+  "shortTitle": null,
+  "figures": []
+}

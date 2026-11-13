@@ -1,0 +1,28 @@
+{
+  "id": "sign-phantom-dataset-2026",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "public-datasets"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Data and resources",
+      "url": "https://drum.um.edu.mt/articles/dataset/The_Signal_Generating_SiGn_fMRI_Phantom_Dataset/31411158"
+    }
+  ],
+  "title": "The Signal Generating (SiGn) fMRI Phantom Dataset",
+  "authors": [
+    "Sephora Galea",
+    "Brandon Charles Seychell",
+    "Paola Galdi",
+    "THERESE HUNTER",
+    "Claude Julien Bajada",
+    "UMRI PLATFORM"
+  ],
+  "year": 2026,
+  "venue": "University of Malta drUM / Figshare",
+  "kind": "dataset",
+  "doi": "10.60809/drum.31411158.v2"
+}

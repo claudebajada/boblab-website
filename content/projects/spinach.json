@@ -1,0 +1,21 @@
+{
+  "id": "spinach",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Scalable and Precision Imaging for Neurological Analysis in Malta using Computational High-throughput",
+  "acronym": "SPINACH",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2023-06-15",
+  "endDate": "2024-06-14",
+  "summary": [
+    "SPINACH examined computational approaches for processing neuroimaging data at scale."
+  ],
+  "publicationIds": [],
+  "shortTitle": null,
+  "figures": []
+}

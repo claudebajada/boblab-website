@@ -1,0 +1,20 @@
+{
+  "id": "unet-brain-tumour-2021",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Exploring the U-Net++ Model for Automatic Brain Tumor Segmentation",
+  "authors": [
+    "Neil Micallef",
+    "Dylan Seychell",
+    "Claude J. Bajada"
+  ],
+  "year": 2021,
+  "venue": "IEEE Access",
+  "kind": "journal",
+  "doi": "10.1109/ACCESS.2021.3111131"
+}

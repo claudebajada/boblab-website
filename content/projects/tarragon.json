@@ -1,0 +1,27 @@
+{
+  "id": "tarragon",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "DISC cluster",
+      "url": "https://www.um.edu.mt/clusters/disc/"
+    }
+  ],
+  "title": "Test-retest Analysis and Robustness of Regional Architectural Graphs using Open Neuroimaging",
+  "acronym": "TARRAGON",
+  "status": "active",
+  "category": "research",
+  "startDate": "2026-02-01",
+  "endDate": "2027-07-30",
+  "summary": [
+    "TARRAGON tests how consistently brain-network methods describe regional architecture when the same person is scanned more than once.",
+    "The project uses open neuroimaging data to assess the robustness of these measurements. It is part of DISC's biomedical imaging pillar."
+  ],
+  "publicationIds": [],
+  "shortTitle": null,
+  "figures": []
+}

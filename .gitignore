@@ -1,0 +1,16 @@
+dist/
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+.impeccable/
+
+# Internal material belongs in the separate workspace archive.
+assets/
+archive/
+inbox/
+internal/
+private/
+working/

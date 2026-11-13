@@ -1,0 +1,21 @@
+{
+  "id": "brian-framework-preprint",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Testing diffusion-derived orientation priors for streamline modelling of the MRI-visible glioblastoma core: the BRIAN framework",
+  "authors": [
+    "Aitor Alberdi Escudero",
+    "Kenneth Scerri",
+    "Andrew Sammut",
+    "Claude J. Bajada"
+  ],
+  "year": 2026,
+  "venue": "bioRxiv",
+  "kind": "preprint",
+  "doi": "10.64898/2026.07.30.741684"
+}

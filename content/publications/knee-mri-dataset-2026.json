@@ -1,0 +1,27 @@
+{
+  "id": "knee-mri-dataset-2026",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "public-datasets"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Dataset catalogue",
+      "url": "https://drum.um.edu.mt/articles/dataset/_b_Healthy_young-adult_knee_multiparametric_MRI_dataset_b_/31399980"
+    }
+  ],
+  "title": "Healthy young-adult knee multiparametric MRI dataset",
+  "authors": [
+    "Valentina Camilleri",
+    "Claude Julien Bajada",
+    "Kristian Galea",
+    "UMRI PLATFORM",
+    "Nolan Vella"
+  ],
+  "year": 2026,
+  "venue": "University of Malta drUM / Figshare; public catalogue, controlled-access files",
+  "kind": "dataset",
+  "doi": "10.60809/drum.31399980.v1"
+}

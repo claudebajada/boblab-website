@@ -1,0 +1,23 @@
+{
+  "id": "glide",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Glucose levels as markers of brain health in patients with diabetes",
+  "acronym": "GLIDE",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2022-04-29",
+  "endDate": "2023-04-30",
+  "summary": [
+    "GLIDE investigated glucose levels as markers of brain health in people with diabetes."
+  ],
+  "publicationIds": [
+    "diabetes-qmri-abstract-2026"
+  ],
+  "shortTitle": null,
+  "figures": []
+}

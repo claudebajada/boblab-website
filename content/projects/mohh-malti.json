@@ -1,0 +1,22 @@
+{
+  "id": "mohh-malti",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Moħħ Malti",
+  "acronym": "Moħħ Malti",
+  "status": "active",
+  "category": "education",
+  "startDate": "2025-10-01",
+  "endDate": "2027-10-01",
+  "summary": [
+    "Moħħ Malti is an open Maltese neuroanatomy lexicon for teaching and science communication.",
+    "The RIDT-supported project develops Maltese terms for describing the brain and makes them available for students, educators, and the wider public."
+  ],
+  "publicationIds": [],
+  "shortTitle": null,
+  "figures": []
+}

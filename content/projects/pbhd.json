@@ -1,0 +1,23 @@
+{
+  "id": "pbhd",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Predicting brain health in diabetes",
+  "acronym": "PBHD",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2022-06-13",
+  "endDate": "2023-06-12",
+  "summary": [
+    "PBHD supported international collaboration on predicting brain health in people with diabetes."
+  ],
+  "publicationIds": [
+    "diabetes-qmri-abstract-2026"
+  ],
+  "shortTitle": null,
+  "figures": []
+}

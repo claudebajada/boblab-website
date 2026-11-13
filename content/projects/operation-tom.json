@@ -1,0 +1,29 @@
+{
+  "id": "operation-tom",
+  "draft": false,
+  "sourceIds": [
+    "project-audit"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Vogt-Bailey toolbox",
+      "url": "https://github.com/VBIndex/py_vb_toolbox"
+    }
+  ],
+  "title": "Enhancing Astronaut Neuro-Imaging Capabilities: Toolbox Optimization & Modification",
+  "acronym": "Operation TOM",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2023-12-06",
+  "endDate": "2025-05-30",
+  "summary": [
+    "Operation TOM investigated how functional MRI processing affects measurements of local brain organisation in spaceflight research.",
+    "The project tested processing artefacts and methods to reduce them. It also compared the Vogt-Bailey Index across task-based fMRI acquisition protocols."
+  ],
+  "publicationIds": [
+    "vb-pulse-sequences-preprint"
+  ],
+  "shortTitle": null,
+  "figures": []
+}

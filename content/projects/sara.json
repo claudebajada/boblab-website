@@ -1,0 +1,43 @@
+{
+  "id": "sara",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "public-datasets",
+    "reused-research-figures"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "SiGn workflow container",
+      "url": "https://doi.org/10.5281/zenodo.19495290"
+    }
+  ],
+  "title": "Synthetic Anatomy for Radiological Applications - Generating a Functional MRI Phantom",
+  "acronym": "SARA",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2024-11-01",
+  "endDate": "2026-04-30",
+  "summary": [
+    "SARA developed physical models for testing functional MRI measurements. An MRI phantom is an object with known properties that researchers scan to check acquisition and analysis methods.",
+    "The Signal Generating phantom produces a controlled changing signal for testing fMRI workflows. Its public resources include MRI data, analysis code, manufacturing files, and a containerised workflow."
+  ],
+  "publicationIds": [
+    "sign-phantom-preprint",
+    "sign-phantom-dataset-2026"
+  ],
+  "shortTitle": null,
+  "figures": [
+    {
+      "src": "/media/research/sign-figure-1.jpg",
+      "alt": "A digital brain-slice mesh, a 3D-printed brain slice viewed from both sides, and the gel-filled phantom with its compartments labelled.",
+      "caption": "Construction of the SiGn phantom, from a digital brain-slice mesh to the printed model and gel-filled assembly. GM, WM, and CSF label the grey matter, white matter, and cerebrospinal fluid compartments.",
+      "credit": "Galea et al. (2026), Figure 1, SiGn preprint.",
+      "sourceUrl": "https://www.biorxiv.org/content/10.64898/2026.04.15.717370v2.full-text",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "width": 1280,
+      "height": 301
+    }
+  ]
+}

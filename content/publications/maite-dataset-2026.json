@@ -1,0 +1,25 @@
+{
+  "id": "maite-dataset-2026",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "public-datasets"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Data and resources",
+      "url": "https://drum.um.edu.mt/articles/dataset/M_A_I_T_E_Multicolor_Anatomical_Imaging_and_Tractography_for_Education_/32615961"
+    }
+  ],
+  "title": "M.A.I.T.E. (Multicolor Anatomical Imaging and Tractography for Education)",
+  "authors": [
+    "Maren Ona Erkizia",
+    "Claude Julien Bajada",
+    "UMRI PLATFORM"
+  ],
+  "year": 2026,
+  "venue": "University of Malta drUM / Figshare",
+  "kind": "dataset",
+  "doi": "10.60809/drum.32615961.v2"
+}

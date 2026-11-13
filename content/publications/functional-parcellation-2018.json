@@ -1,0 +1,22 @@
+{
+  "id": "functional-parcellation-2018",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "An emergent functional parcellation of the temporal cortex",
+  "authors": [
+    "Rebecca L. Jackson",
+    "Claude J. Bajada",
+    "Grace E. Rice",
+    "Lauren L. Cloutman",
+    "Matthew A. Lambon Ralph"
+  ],
+  "year": 2018,
+  "venue": "NeuroImage",
+  "kind": "journal",
+  "doi": "10.1016/j.neuroimage.2017.04.024"
+}

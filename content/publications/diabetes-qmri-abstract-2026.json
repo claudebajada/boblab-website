@@ -1,0 +1,22 @@
+{
+  "id": "diabetes-qmri-abstract-2026",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Quantitative MRI markers of neurovascular dysfunction in patients with type 2 diabetes",
+  "authors": [
+    "Nolan Vella",
+    "Carmel J. Caruana",
+    "Josanne Vassallo",
+    "Matthew Grech Sollars",
+    "Claude Julien Bajada"
+  ],
+  "year": 2026,
+  "venue": "Physica Medica, conference abstract",
+  "kind": "conference",
+  "doi": "10.1016/j.ejmp.2026.106720"
+}

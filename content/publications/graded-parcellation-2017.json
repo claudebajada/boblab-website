@@ -1,0 +1,24 @@
+{
+  "id": "graded-parcellation-2017",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "A graded tractographic parcellation of the temporal lobe",
+  "authors": [
+    "Claude J. Bajada",
+    "Rebecca L. Jackson",
+    "Hamied A. Haroon",
+    "Hojjatollah Azadbakht",
+    "Geoff J.M. Parker",
+    "Matthew A. Lambon Ralph",
+    "Lauren L. Cloutman"
+  ],
+  "year": 2017,
+  "venue": "NeuroImage",
+  "kind": "journal",
+  "doi": "10.1016/j.neuroimage.2017.04.016"
+}

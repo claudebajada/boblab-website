@@ -1,0 +1,24 @@
+{
+  "id": "occipital-fasciculi-2021",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Occipital Intralobar fasciculi: a description, through tractography, of three forgotten tracts",
+  "authors": [
+    "Maeva Bugain",
+    "Yana Dimech",
+    "Natalia Torzhenskaya",
+    "Michel Thiebaut de Schotten",
+    "Svenja Caspers",
+    "Richard Muscat",
+    "Claude J. Bajada"
+  ],
+  "year": 2021,
+  "venue": "Communications Biology",
+  "kind": "journal",
+  "doi": "10.1038/s42003-021-01935-3"
+}

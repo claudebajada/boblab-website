@@ -1,0 +1,26 @@
+{
+  "id": "diffusion-mri-review-2017",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "mri-review-2017"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Read the institutional copy",
+      "url": "https://www.um.edu.mt/library/oar/handle/123456789/22362"
+    }
+  ],
+  "title": "Diffusion MRI: From basic principles to clinical applications",
+  "authors": [
+    "Claude J. Bajada",
+    "Geoff J. M. Parker",
+    "Matthew A. Lambon Ralph",
+    "Lauren L. Cloutman"
+  ],
+  "year": 2017,
+  "venue": "Malta Medical School Gazette, 1(2), 41-47",
+  "kind": "journal",
+  "doi": null
+}

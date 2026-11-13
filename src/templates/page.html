@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{description}}">
+  <meta name="robots" content="{{robots}}">
+  <meta name="theme-color" content="#073e4b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <title>{{title}}</title>
+  {{canonical}}
+  <link rel="icon" href="/media/bob-logo-colour.png" type="image/png">
+  <link rel="preload" href="/fonts/manrope-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="{{pageClass}}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="/" aria-label="BOB Lab home">
+      <img src="/media/bob-logo-colour.png" alt="" width="751" height="635">
+      <span>Boundaries of the Brain<span class="brand-place">University of Malta</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">{{navigation}}</nav>
+    <details class="mobile-menu">
+      <summary>Menu <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></summary>
+      <nav aria-label="Mobile navigation">{{navigation}}</nav>
+    </details>
+  </header>
+  {{notice}}
+  <main id="main" tabindex="-1">{{body}}</main>
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <h2>Contact the lab</h2>
+      <div><p>For research collaboration and student enquiries.</p><a class="contact-link" href="mailto:{{email}}">Get in touch {{arrow}}</a></div>
+    </div>
+    <div class="wrap footer-bottom">
+      <a class="footer-brand" href="/" aria-label="BOB Lab home"><img src="/media/bob-logo-white.png" alt="BOB Lab" width="751" height="635"></a>
+      <p>{{expandedName}}<br>{{institution}} · Malta</p>
+      <nav class="social-links" aria-label="Lab links"><a href="https://github.com/VBIndex/py_vb_toolbox">GitHub</a><a href="https://www.linkedin.com/company/theboblab">LinkedIn</a><a href="https://www.instagram.com/the_bob_lab">Instagram</a></nav>
+      {{footerDuck}}
+    </div>
+  </footer>
+</body>
+</html>

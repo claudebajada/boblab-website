@@ -1,0 +1,32 @@
+{
+  "id": "air-pollution-diffusion-2025",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "The Impact of Early Life Exposure to Air Pollution on the Brain: A Diffusion MRI Study in 10–13‐Year‐Old Children With and Without ADHD Diagnosis",
+  "authors": [
+    "Paulina Lewandowska",
+    "Claude J. Bajada",
+    "Yarema Mysak",
+    "Aleksandra Domagalik",
+    "Bartosz Kossowski",
+    "Clemens Baumbach",
+    "Katarzyna Kaczmarek‐Majer",
+    "Anna Degórska",
+    "Krzysztof Skotak",
+    "Katarzyna Sitnik‐Warchulska",
+    "Małgorzata Lipowska",
+    "Bernadetta Izydorczyk",
+    "James Grellier",
+    "Iana Markevych",
+    "Marcin Szwed"
+  ],
+  "year": 2025,
+  "venue": "Human Brain Mapping",
+  "kind": "journal",
+  "doi": "10.1002/hbm.70306"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "brian",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "reused-research-figures"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Brain Research through Imaging Analysis for Neurooncology",
+  "acronym": "BRIAN",
+  "status": "completed",
+  "category": "research",
+  "startDate": "2024-07-20",
+  "endDate": "2026-08-04",
+  "summary": [
+    "BRIAN used diffusion MRI to test methods for modelling the MRI-visible core of glioblastoma, a type of brain tumour.",
+    "The framework compares diffusion-derived orientation information for modelling streamlines within the tumour core. The public preprint reports the methods and their limitations. ALIVE Charity Foundation supported the project through the University of Malta Research, Innovation and Development Trust."
+  ],
+  "publicationIds": [
+    "brian-framework-preprint"
+  ],
+  "shortTitle": null,
+  "figures": [
+    {
+      "src": "/media/research/brian-figure-1.jpg",
+      "alt": "Axial, coronal, and sagittal MRI views compare green tumour-region masks transferred through an MNI-152 template with red masks transferred by direct registration.",
+      "caption": "Two ways of transferring a tumour-region mask into a healthy reference brain. Green uses the MNI-152 template; red uses direct registration. This research figure compares registration methods.",
+      "credit": "Alberdi Escudero et al. (2026), Figure 1, BRIAN preprint.",
+      "sourceUrl": "https://www.biorxiv.org/content/10.64898/2026.07.30.741684v1.full-text",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "width": 1017,
+      "height": 1280
+    }
+  ]
+}

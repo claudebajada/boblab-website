@@ -1,0 +1,13 @@
+{
+  "id": "example-publication",
+  "draft": true,
+  "title": "Replace with verified title",
+  "authors": ["Replace with author names in citation order"],
+  "year": 2026,
+  "venue": "Replace with journal, repository, or publisher",
+  "kind": "journal",
+  "doi": null,
+  "links": [],
+  "sourceIds": [],
+  "lastReviewed": "2026-11-11"
+}

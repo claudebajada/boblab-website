@@ -1,0 +1,32 @@
+{
+  "id": "osiris-eu",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "osiris-cordis"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "CORDIS project record",
+      "url": "https://cordis.europa.eu/project/id/101300127"
+    },
+    {
+      "label": "DISC cluster",
+      "url": "https://www.um.edu.mt/clusters/disc/"
+    }
+  ],
+  "title": "Open Science inspiring Inclusive Research and Innovation towards Societal Impact in Europe",
+  "acronym": "OSIRIS-EU",
+  "status": "active",
+  "category": "policy",
+  "startDate": "2026-09-01",
+  "endDate": "2030-08-31",
+  "summary": [
+    "OSIRIS-EU is a European research staff exchange project on inclusive open science and its societal impact.",
+    "The University of Malta participates through DISC. The project is funded by the Marie Skłodowska-Curie Actions Staff Exchanges programme, grant agreement 101300127."
+  ],
+  "publicationIds": [],
+  "shortTitle": null,
+  "figures": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "vb-pulse-sequences-preprint",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Testing the Vogt-Bailey Index using task-based fMRI across pulse sequence protocols",
+  "authors": [
+    "Kristian Galea",
+    "Aitor Alberdi Escudero",
+    "Nina Attard-Montalto",
+    "Nolan Vella",
+    "Robert E. Smith",
+    "Christine Farrugia",
+    "Paola Galdi",
+    "Kenneth Scerri",
+    "Liam Butler",
+    "Claude J. Bajada"
+  ],
+  "year": 2025,
+  "venue": "bioRxiv",
+  "kind": "preprint",
+  "doi": "10.1101/2025.02.06.636866"
+}

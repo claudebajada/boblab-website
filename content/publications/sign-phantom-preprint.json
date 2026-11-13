@@ -1,0 +1,22 @@
+{
+  "id": "sign-phantom-preprint",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "SiGn: An Open-Source Signal-Generating fMRI Phantom for Dynamic Quality Assurance",
+  "authors": [
+    "Sephora Galea",
+    "Brandon C Seychell",
+    "Paola Galdi",
+    "Thérèse Hunter",
+    "Claude J Bajada"
+  ],
+  "year": 2026,
+  "venue": "bioRxiv",
+  "kind": "preprint",
+  "doi": "10.64898/2026.04.15.717370"
+}

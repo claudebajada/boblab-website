@@ -1,0 +1,25 @@
+{
+  "id": "feature-similarity-gradients-2020",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "A tutorial and tool for exploring feature similarity gradients with MRI data",
+  "authors": [
+    "Claude J. Bajada",
+    "Lucas Q. Costa Campos",
+    "Svenja Caspers",
+    "Richard Muscat",
+    "Geoff J.M. Parker",
+    "Matthew A. Lambon Ralph",
+    "Lauren L. Cloutman",
+    "Nelson J. Trujillo-Barreto"
+  ],
+  "year": 2020,
+  "venue": "NeuroImage",
+  "kind": "journal",
+  "doi": "10.1016/j.neuroimage.2020.117140"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "disc",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "disc-cluster"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Visit DISC",
+      "url": "https://www.um.edu.mt/clusters/disc/"
+    },
+    {
+      "label": "DISC pillars and projects",
+      "url": "https://www.um.edu.mt/clusters/disc/pillarsandprojects/"
+    }
+  ],
+  "title": "Data Integrity and Stewardship Cluster",
+  "acronym": "DISC",
+  "status": "active",
+  "category": "collaboration",
+  "startDate": "2024-10-01",
+  "endDate": "2029-10-01",
+  "summary": [
+    "DISC is a University of Malta research cluster working on research data governance and stewardship. It brings biomedical imaging researchers together with specialists in law and other disciplines.",
+    "Claude Bajada is Vice-Chair and leads the biomedical imaging pillar. Mireille-Martine Sant chairs the cluster. Their joint work examines how researchers can share neuroimaging data while meeting data protection requirements.",
+    "TARRAGON and OSIRIS-EU are projects within DISC. The cluster also supports specific outputs from other projects, including data governance for the SiGn phantom dataset."
+  ],
+  "publicationIds": [
+    "gdpr-open-neuroimaging-2025",
+    "open-science-gdpr-2025",
+    "edpb-research-consultation-2026"
+  ],
+  "shortTitle": null,
+  "figures": []
+}

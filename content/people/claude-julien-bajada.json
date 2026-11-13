@@ -1,0 +1,27 @@
+{
+  "id": "claude-julien-bajada",
+  "draft": false,
+  "sourceIds": [
+    "um-claude-profile",
+    "legacy-people",
+    "disc-cluster",
+    "um-profile-portraits"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "University profile",
+      "url": "https://www.um.edu.mt/profile/claudebajada"
+    }
+  ],
+  "name": "Claude Julien Bajada",
+  "role": "Lab lead, Associate Professor",
+  "group": "faculty",
+  "years": null,
+  "bio": [
+    "Claude studies human brain organisation and develops computational neuroimaging methods in the Department of Physiology and Biochemistry at the University of Malta.",
+    "He is Vice-Chair of the Data Integrity and Stewardship Cluster and leads its biomedical imaging pillar. His policy work addresses research data sharing and data protection."
+  ],
+  "image": "/media/research/claude-julien-bajada.jpg",
+  "imageAlt": "Portrait of Claude Julien Bajada"
+}

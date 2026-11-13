@@ -1,0 +1,23 @@
+{
+  "id": "tract-terminations-2017",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "The tract terminations in the temporal lobe: Their location and associated functions",
+  "authors": [
+    "Claude J. Bajada",
+    "Hamied A. Haroon",
+    "Hojjatollah Azadbakht",
+    "Geoff J.M. Parker",
+    "Matthew A. Lambon Ralph",
+    "Lauren L. Cloutman"
+  ],
+  "year": 2017,
+  "venue": "Cortex",
+  "kind": "journal",
+  "doi": "10.1016/j.cortex.2016.03.013"
+}

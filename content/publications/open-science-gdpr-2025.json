@@ -1,0 +1,19 @@
+{
+  "id": "open-science-gdpr-2025",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Processing neuroimaging data for research purposes: Open Science, FAIR data, and the GDPR",
+  "authors": [
+    "Mireille M Sant",
+    "Claude J Bajada"
+  ],
+  "year": 2025,
+  "venue": "International Data Privacy Law",
+  "kind": "journal",
+  "doi": "10.1093/idpl/ipaf020"
+}

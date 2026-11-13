@@ -1,0 +1,19 @@
+{
+  "id": "example-project",
+  "draft": true,
+  "title": "Replace with verified project title",
+  "acronym": null,
+  "summary": [
+    "Replace with a sourced plain-language summary."
+  ],
+  "status": "active",
+  "startDate": null,
+  "endDate": null,
+  "links": [],
+  "sourceIds": [],
+  "lastReviewed": "2026-11-11",
+  "category": "research",
+  "publicationIds": [],
+  "shortTitle": null,
+  "figures": []
+}

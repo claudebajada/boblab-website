@@ -1,0 +1,19 @@
+{
+  "id": "nested-unet-2020",
+  "draft": false,
+  "sourceIds": [
+    "nested-unet"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "A Nested U-Net Approach for Brain Tumour Segmentation",
+  "authors": [
+    "Neil Micallef",
+    "Dylan Seychell",
+    "Claude Julien Bajada"
+  ],
+  "year": 2020,
+  "venue": "2020 IEEE 20th Mediterranean Electrotechnical Conference, MELECON",
+  "kind": "conference",
+  "doi": "10.1109/melecon48756.2020.9140550"
+}

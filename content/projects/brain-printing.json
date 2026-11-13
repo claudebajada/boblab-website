@@ -1,0 +1,28 @@
+{
+  "id": "brain-printing",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "brain-printing-software"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "Source code and documentation",
+      "url": "https://github.com/claudebajada/process_brain_for_printing"
+    }
+  ],
+  "title": "process_brain_for_printing",
+  "acronym": null,
+  "status": "resource",
+  "category": "resource",
+  "startDate": null,
+  "endDate": null,
+  "summary": [
+    "This Python software prepares MRI-derived brain surfaces for 3D printing.",
+    "Its command-line tools prepare and merge surfaces, apply colours, and generate multi-material brain slabs."
+  ],
+  "publicationIds": [],
+  "shortTitle": "3D brain printing",
+  "figures": []
+}

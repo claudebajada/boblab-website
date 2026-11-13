@@ -1,0 +1,28 @@
+{
+  "id": "enrich-qmri",
+  "draft": false,
+  "sourceIds": [
+    "project-audit",
+    "enrich-project"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [
+    {
+      "label": "ENRICH project listing",
+      "url": "https://www.um.edu.mt/clusters/enrich/research/"
+    }
+  ],
+  "title": "A Dual-Pipeline Approach for Quantitative Neuroimaging: Leveraging Retrospective MRI Data and Future qMRI Protocols",
+  "acronym": null,
+  "status": "programme",
+  "category": "collaboration",
+  "startDate": null,
+  "endDate": null,
+  "summary": [
+    "This ENRICH cluster project studies a dual approach to quantitative neuroimaging using existing MRI data and future quantitative MRI protocols.",
+    "Claude Bajada is a co-investigator in the project, which sits within ENRICH's Good Health and Wellbeing pillar."
+  ],
+  "publicationIds": [],
+  "shortTitle": "Quantitative neuroimaging with ENRICH",
+  "figures": []
+}

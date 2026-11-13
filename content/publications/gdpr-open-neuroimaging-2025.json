@@ -1,0 +1,19 @@
+{
+  "id": "gdpr-open-neuroimaging-2025",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "GDPR v. Open Neuroimaging: The case of Europe’s data sharing dilemma",
+  "authors": [
+    "Claude J. Bajada",
+    "Mireille M. Sant"
+  ],
+  "year": 2025,
+  "venue": "Aperture Neuro",
+  "kind": "journal",
+  "doi": "10.52294/001c.144761"
+}

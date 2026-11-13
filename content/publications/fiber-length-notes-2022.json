@@ -1,0 +1,20 @@
+{
+  "id": "fiber-length-notes-2022",
+  "draft": false,
+  "sourceIds": [
+    "bibliography-audit",
+    "doi-metadata"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "title": "Notes on fiber length measurements: A case study in the underbelly of open source neuroscience",
+  "authors": [
+    "Claude J Bajada",
+    "Robert E Smith",
+    "Svenja Caspers"
+  ],
+  "year": 2022,
+  "venue": "NeuroImage",
+  "kind": "journal",
+  "doi": "10.1016/j.neuroimage.2022.119738"
+}

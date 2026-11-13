@@ -1,0 +1,17 @@
+{
+  "id": "sephora-galea",
+  "draft": false,
+  "sourceIds": [
+    "owner-update",
+    "legacy-people"
+  ],
+  "lastReviewed": "2026-11-12",
+  "links": [],
+  "name": "Sephora Galea",
+  "role": "Lab member",
+  "group": "current",
+  "years": null,
+  "bio": [],
+  "image": null,
+  "imageAlt": null
+}
