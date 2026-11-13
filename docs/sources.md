@@ -196,3 +196,9 @@ Lab-confirmed names and roles: Adur Apeceche Araquistain, Intern; Maia Farrugia,
 ## supplied-banner-5
 
 Lab-supplied and approved four-panel cortical rendering, banner_5.png, 2257 × 420 pixels. The scientific image pixels are unchanged; the background and responsive arrangement use CSS. Reviewed 2026-11-12.
+
+## owner-roster-confirmation-2026-11-13
+
+Lab-confirmed on 2026-11-13: Aitor Alberdi, Chelsea Adu-Domfeh, Maren Ona and
+Tonio Bezzina are former lab members. Valentina Camilleri is a current lab member
+with the role RSO 1. Reviewed 2026-11-13.
