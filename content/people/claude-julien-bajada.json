@@ -5,13 +5,18 @@
     "um-claude-profile",
     "legacy-people",
     "disc-cluster",
-    "um-profile-portraits"
+    "um-profile-portraits",
+    "umri-platform"
   ],
-  "lastReviewed": "2026-11-12",
+  "lastReviewed": "2026-11-13",
   "links": [
     {
       "label": "University profile",
       "url": "https://www.um.edu.mt/profile/claudebajada"
+    },
+    {
+      "label": "UMRI platform",
+      "url": "https://www.um.edu.mt/platforms/umri/"
     }
   ],
   "name": "Claude Julien Bajada",
@@ -20,6 +25,7 @@
   "years": null,
   "bio": [
     "Claude studies human brain organisation and develops computational neuroimaging methods in the Department of Physiology and Biochemistry at the University of Malta.",
+    "He chairs the University of Malta Magnetic Resonance Imaging Platform (UMRI), supporting MRI research, teaching and collaboration.",
     "He is Vice-Chair of the Data Integrity and Stewardship Cluster and leads its biomedical imaging pillar. His policy work addresses research data sharing and data protection."
   ],
   "image": "/media/research/claude-julien-bajada.jpg",

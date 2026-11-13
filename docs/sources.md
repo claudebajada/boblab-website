@@ -210,3 +210,12 @@ PhD student; Valentina Camilleri, Research Support Officer I; Maria Jesus
 Mora-Coral, Scientific Officer; Nolan Vella, PhD Student and current lab member.
 The lab brings together people from different disciplines to work on questions
 about neuroimaging.
+
+## umri-platform
+
+- https://www.um.edu.mt/platforms/umri/
+- https://www.um.edu.mt/platforms/umri/generalpublic/aboutus/ourteam/
+- Reviewed 2026-11-13. The public team page lists Claude Julien Bajada as Chair.
+  The platform supports MRI research, teaching, training and multidisciplinary
+  collaboration. These public sources support the UMRI sentence and platform link
+  in his biography.
