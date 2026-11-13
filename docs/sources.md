@@ -162,6 +162,18 @@ https://github.com/claudebajada/process_brain_for_printing
 
 Public software for preparing MRI-derived brain surfaces for 3D printing. Reviewed 2026-11-12.
 
+## umri-brain-models
+
+- https://www.um.edu.mt/platforms/umri/generalpublic/brainmodels/
+- Reviewed 2026-11-13. UMRI offers 3D-printed brain models and provides an
+  ordering and payment form. Supports the ordering links on the homepage and
+  the 3D brain printing resource page.
+
+## owner-brain-models-2026-11-13
+
+Lab-confirmed on 2026-11-13: UMRI sells the brain models, all proceeds go towards
+UMRI research efforts, and orders are available for collection in Malta only.
+
 ## mri-review-2017
 
 - https://www.um.edu.mt/library/oar/handle/123456789/22362

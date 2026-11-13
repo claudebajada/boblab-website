@@ -122,6 +122,7 @@ export function composePages(data) {
       </div></section>
       <section class="wrap section"><div class="section-heading"><h2>Recent research</h2><a class="inline-link" href="/publications/">Publications and outputs ${arrow}</a></div>${featuredPaper ? paper(featuredPaper, 3) : ''}
         <div class="tool-strip"><div><h3>The Vogt-Bailey toolbox</h3><p>Open-source tools for measuring local gradients and boundaries in MRI data.</p></div><a class="inline-link" href="${sourceCode}">View the code ${arrow}</a></div>
+        <div class="tool-strip"><div><h3>3D-printed brain models</h3><p>The University of Malta Magnetic Resonance Imaging Platform (UMRI) sells 3D-printed brain models. All proceeds support UMRI research efforts. Collection in Malta only.</p></div><a class="inline-link" href="https://www.um.edu.mt/platforms/umri/generalpublic/brainmodels/">Order from UMRI ${arrow}</a></div>
       </section>
       ${recentUpdates.length ? `<section class="story-section" id="news-and-events"><div class="wrap section story-layout"><h2>News and events</h2><div class="news-list">${recentUpdates.map(n => `<article id="${e(n.id)}"><h3><a href="${newsUrl(n)}">${e(n.title)}</a></h3>${newsTime(n)}${n.photos.length ? newsPhoto(n.photos[0], true) : ''}${paragraphs(n.summary)}<a class="inline-link" href="${newsUrl(n)}">${n.photos.length ? 'Event story and photographs' : 'Read the update'} ${arrow}</a></article>`).join('')}</div></div></section>` : ''}`,
     },

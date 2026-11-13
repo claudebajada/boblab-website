@@ -3,10 +3,16 @@
   "draft": false,
   "sourceIds": [
     "project-audit",
-    "brain-printing-software"
+    "brain-printing-software",
+    "umri-brain-models",
+    "owner-brain-models-2026-11-13"
   ],
-  "lastReviewed": "2026-11-12",
+  "lastReviewed": "2026-11-13",
   "links": [
+    {
+      "label": "Order brain models from UMRI",
+      "url": "https://www.um.edu.mt/platforms/umri/generalpublic/brainmodels/"
+    },
     {
       "label": "Source code and documentation",
       "url": "https://github.com/claudebajada/process_brain_for_printing"
@@ -20,7 +26,8 @@
   "endDate": null,
   "summary": [
     "This Python software prepares MRI-derived brain surfaces for 3D printing.",
-    "Its command-line tools prepare and merge surfaces, apply colours, and generate multi-material brain slabs."
+    "Its command-line tools prepare and merge surfaces, apply colours, and generate multi-material brain slabs.",
+    "The University of Malta Magnetic Resonance Imaging Platform (UMRI) also sells 3D-printed brain models. All proceeds support UMRI research efforts. Models are available for collection in Malta only."
   ],
   "publicationIds": [],
   "shortTitle": "3D brain printing",
