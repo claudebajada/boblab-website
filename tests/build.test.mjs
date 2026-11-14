@@ -40,8 +40,17 @@ test('all collections build publicly while drafts and source files stay outside 
       assert.ok(!html.includes('sourceIds') && !html.includes('Scaffold preview'));
       assert.ok(html.includes('rel="canonical"'));
     }
+    const homepage = await readFile(path.join(output, 'index.html'), 'utf8');
+    const homeSchema = JSON.parse(homepage.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? 'null');
+    assert.equal(homeSchema['@graph'][0]['@type'], 'ResearchOrganization');
+    assert.equal(homeSchema['@graph'][1]['@type'], 'WebSite');
+    assert.equal(homeSchema['@graph'][2].url, 'https://lab.example/');
     const projectHtml = await readFile(path.join(output, 'projects/example-project/index.html'), 'utf8');
     assert.match(projectHtml, /About the project/);
+    const projectSchema = JSON.parse(projectHtml.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? 'null');
+    assert.equal(projectSchema['@graph'][0].url, 'https://lab.example/projects/example-project/');
+    assert.ok(!(await readFile(path.join(output, '404.html'), 'utf8')).includes('application/ld+json'));
+    assert.ok(!(await readFile(path.join(output, 'our-team-1/index.html'), 'utf8')).includes('application/ld+json'));
     assert.equal((projectHtml.match(/aria-current="page"/g) || []).length, 2);
     assert.ok(!projectHtml.includes('href="/projects/private-project/"'));
     assert.ok(!(await readdir(path.join(output, 'projects'))).includes('private-project'));
@@ -61,6 +70,10 @@ test('all collections build publicly while drafts and source files stay outside 
     const eventHtml = await readFile(path.join(output, 'news/amazing-animals-science-in-the-city-2026/index.html'), 'utf8');
     assert.ok(eventHtml.includes('src="/boblab-website/media/events/amazing-animals-claude-bajada.webp"'));
     assert.ok(eventHtml.includes('href="/boblab-website/#news-and-events"'));
+    const eventSchema = JSON.parse(eventHtml.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? 'null');
+    assert.equal(eventSchema['@graph'][1]['@type'], 'Article');
+    assert.equal(eventSchema['@graph'][1].image, 'https://claudebajada.github.io/boblab-website/media/events/amazing-animals-brain-models.webp');
+    assert.equal(eventSchema['@graph'][1].datePublished, undefined);
     assert.ok(!eventHtml.includes('href="/news/'));
     assert.ok(pagesHtml.includes('src="/boblab-website/media/research/legacy-brain-still.webp"'));
     assert.ok(pagesHtml.includes('href="/boblab-website/projects/"'));
@@ -78,6 +91,9 @@ test('all collections build publicly while drafts and source files stay outside 
     const domainHtml = await readFile(path.join(output, 'index.html'), 'utf8');
     assert.ok(domainHtml.includes('href="/styles.css"'));
     assert.ok(!domainHtml.includes('/boblab-website/'));
+    const domainSchema = JSON.parse(domainHtml.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? 'null');
+    assert.equal(domainSchema['@graph'][0].url, 'https://boblab.example/');
+    assert.equal(domainSchema['@graph'][0].logo, 'https://boblab.example/media/bob-logo-colour.png');
     const examplePath = path.join(fixture, 'content/projects/example-project.json');
     const example = JSON.parse(await readFile(examplePath, 'utf8'));
     example.publicationIds = ['missing-publication'];

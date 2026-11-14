@@ -163,7 +163,7 @@ export function composePages(data) {
     },
   ];
   return [...pages, ...updates.map(n => ({
-    route: newsUrl(n), navigationRoute: '/', label: n.title, pageClass: 'news-page', description: n.summary[0],
+    route: newsUrl(n), navigationRoute: '/', label: n.title, pageClass: 'news-page', description: n.summary[0], article: n,
     body: `<div class="wrap project-breadcrumb"><a href="/#news-and-events">${arrow} News and events</a></div>
       ${intro(e(n.title), '')}
       <section class="wrap section news-story" aria-label="Update">${newsTime(n)}${paragraphs(n.summary)}${links(n.links)}</section>
