@@ -45,7 +45,10 @@ jobs:
         uses: actions/configure-pages@v5
         id: pages
       - name: Build for the actual Pages URL
-        run: npm run build
+        # Pages can report HTTP while a new custom domain awaits its certificate.
+        # Generate HTTPS canonical URLs throughout the transition.
+        shell: bash
+        run: SITE_URL="${SITE_URL/#http:/https:}" npm run build
         working-directory: ${{ steps.source.outputs.directory }}
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
