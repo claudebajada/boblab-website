@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-11-13",
+  "reviewed": "2026-11-20",
   "permission": "BOB Lab authorised reuse of legacy imagery and UM profile headshots. The three paper figures are CC BY 4.0. Logos and banner are lab-supplied approved assets.",
   "assets": [
     {
@@ -101,9 +101,17 @@
       "provenanceStorage": "embedded PNG text"
     },
     {
+      "file": "/media/brand/banner-5.webp",
+      "source": "BOB Lab supplied banner_5.png",
+      "credit": "BOB Lab cortical renderings, approved website use",
+      "changes": "Lossless WebP from the approved PNG, with identical decoded pixels.",
+      "websiteSha256": "d6adcb3a5ec966dabf609849fabfc51cf11fc5ce10f592a59a2c816deecafc9c",
+      "provenanceStorage": "Public asset register"
+    },
+    {
       "file": "/media/events/amazing-animals-brain-models.webp",
       "source": "Owner-supplied Science in the City 2026 photograph; website use cleared by the owner on 2026-11-13.",
-      "sourcePage": "https://scienceinthecity.org.mt/event/fur-ensic-files-cloned-11512/",
+      "sourcePage": "https://scienceinthecity.org.mt/event/amazing-animals/",
       "credit": "Elisa Von Brockdorf",
       "changes": "Uncropped, orientation normalised, resized and compressed as WebP. Original EXIF, GPS, XMP and other private metadata omitted.",
       "websiteSha256": "15a684f446315d2b0f98ce2221de40aff1314fa5a998f8779355e2801197d4bb",
@@ -112,7 +120,7 @@
     {
       "file": "/media/events/amazing-animals-claude-bajada.webp",
       "source": "Owner-supplied Science in the City 2026 photograph; website use cleared by the owner on 2026-11-13.",
-      "sourcePage": "https://scienceinthecity.org.mt/event/fur-ensic-files-cloned-11512/",
+      "sourcePage": "https://scienceinthecity.org.mt/event/amazing-animals/",
       "credit": "Elisa Von Brockdorf",
       "changes": "Uncropped, orientation normalised, resized and compressed as WebP. Original EXIF, GPS, XMP and other private metadata omitted.",
       "websiteSha256": "d35c4b9ae14a215917c7618f9368b9f4d2fa3923c7931b6cf026967e1a141922",
@@ -121,7 +129,7 @@
     {
       "file": "/media/events/amazing-animals-festival.webp",
       "source": "Owner-supplied Science in the City 2026 photograph; website use cleared by the owner on 2026-11-13.",
-      "sourcePage": "https://scienceinthecity.org.mt/event/fur-ensic-files-cloned-11512/",
+      "sourcePage": "https://scienceinthecity.org.mt/event/amazing-animals/",
       "credit": "Elisa Von Brockdorf",
       "changes": "Uncropped, orientation normalised, resized and compressed as WebP. Original EXIF, GPS, XMP and other private metadata omitted.",
       "websiteSha256": "15a24e2bde39d69d8cf3e7361af8110aa021021b026f9d3d008925e4daffbc79",

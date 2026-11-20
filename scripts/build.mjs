@@ -26,6 +26,7 @@ export async function build(projectRoot = root, environment = process.env) {
       name: e(site.name), expandedName: e(site.expandedName), institution: e(site.institution), email: e(site.email || ''), arrow,
       pageClass: e(page.pageClass), robots: site.stage !== 'live' || page.route === '/404.html' || page.canonicalRoute ? 'noindex, nofollow' : 'index, follow',
       canonical: origin && page.route !== '/404.html' ? `<link rel="canonical" href="${e(origin + basePath + (page.canonicalRoute || page.route))}">` : '',
+      redirect: page.canonicalRoute ? `<meta http-equiv="refresh" content="0; url=${e(basePath + page.canonicalRoute)}">` : '',
       structuredData: structuredData(site, page, origin, basePath),
       navigation: pages.filter(p => !p.navigationRoute).map(p => `<a href="${p.route}"${p.route === (page.navigationRoute || page.route) ? ' aria-current="page"' : ''}>${e(p.label)}</a>`).join('\n'),
       notice: site.stage === 'scaffold' ? '<aside class="notice wrap">Scaffold preview. Content migration and final design are still in progress.</aside>' : '',

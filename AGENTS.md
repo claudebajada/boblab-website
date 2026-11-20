@@ -22,8 +22,8 @@ Permission to consult a source does not automatically authorise publishing its c
 
 The owner controls repository visibility and publication. Do not change visibility,
 deploy, or change boblab.info DNS without the owner's instruction. Publish only
-dist/, never the repository or workspace root. The GitHub Pages workflow is
-prepared for later publication. Preview mode disables indexing, not public access.
+dist/, never the repository or workspace root. The GitHub Pages workflow
+publishes the live site at https://boblab.info/. Preview mode disables indexing, not public access.
 
 ## Architecture
 
@@ -73,6 +73,10 @@ prepared for later publication. Preview mode disables indexing, not public acces
   Current portraits are optional and require approved sources.
 - Use academic author-date prose citations, such as "Alberdi Escudero et al. (2026)".
   Long publication previews use "et al." and retain the expandable full author list.
+- When asked to feature a paper on the homepage, match its title or DOI in
+  `content/publications/` and set `featuredPublicationId` in `content/site.json`
+  to that record's ID. For a new output, add its verified public record in the
+  same change. Build the site and check the citation in `dist/index.html`.
 - Use clear English for public visitors. Keep editorial discussions and processing
   history outside public copy. Do not add full-size image links or duplicate actions.
 - Use Claude in news, event reports and casual narrative copy, as requested by

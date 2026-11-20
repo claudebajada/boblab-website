@@ -17,8 +17,9 @@ test('all collections build publicly while drafts and source files stay outside 
     const site = JSON.parse(await readFile(sitePath, 'utf8'));
     Object.assign(site, {
       stage: 'live', origin: 'https://lab.example', email: 'lab@example.com',
+      featuredPublicationId: 'example-publication',
       homeImage: { src: '/media/research/brain-tractography.gif', stillSrc: '/media/research/legacy-brain-still.webp', alt: 'Brain surface and fibre pathways', width: 578, height: 578 },
-      homeBanner: { src: '/media/brand/banner-5.png', alt: 'Four cortical surface renderings', width: 2257, height: 420 },
+      homeBanner: { src: '/media/brand/banner-5.webp', alt: 'Four cortical surface renderings', width: 2257, height: 420 },
     });
     await writeFile(sitePath, JSON.stringify(site));
     for (const [kind, template] of [['people', 'person'], ['projects', 'project'], ['publications', 'publication'], ['news', 'news']]) {
@@ -41,6 +42,7 @@ test('all collections build publicly while drafts and source files stay outside 
       assert.ok(html.includes('rel="canonical"'));
     }
     const homepage = await readFile(path.join(output, 'index.html'), 'utf8');
+    assert.ok(homepage.includes('<article class="paper" id="example-publication">'));
     const homeSchema = JSON.parse(homepage.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? 'null');
     assert.equal(homeSchema['@graph'][0]['@type'], 'ResearchOrganization');
     assert.equal(homeSchema['@graph'][1]['@type'], 'WebSite');
@@ -50,7 +52,11 @@ test('all collections build publicly while drafts and source files stay outside 
     const projectSchema = JSON.parse(projectHtml.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? 'null');
     assert.equal(projectSchema['@graph'][0].url, 'https://lab.example/projects/example-project/');
     assert.ok(!(await readFile(path.join(output, '404.html'), 'utf8')).includes('application/ld+json'));
-    assert.ok(!(await readFile(path.join(output, 'our-team-1/index.html'), 'utf8')).includes('application/ld+json'));
+    const alias = await readFile(path.join(output, 'our-team-1/index.html'), 'utf8');
+    assert.ok(!alias.includes('application/ld+json'));
+    assert.ok(alias.includes('<meta http-equiv="refresh" content="0; url=/our-team/">'));
+    assert.ok(alias.includes('href="/our-team/">Meet the people</a>'));
+    assert.ok(!homepage.includes('http-equiv="refresh"'));
     assert.equal((projectHtml.match(/aria-current="page"/g) || []).length, 2);
     assert.ok(!projectHtml.includes('href="/projects/private-project/"'));
     assert.ok(!(await readdir(path.join(output, 'projects'))).includes('private-project'));
@@ -62,10 +68,13 @@ test('all collections build publicly while drafts and source files stay outside 
     await assert.rejects(checkOutputLinks(output), /missing fragment/);
     await build(fixture, { SITE_URL: 'https://claudebajada.github.io/boblab-website' });
     const pagesHtml = await readFile(path.join(output, 'index.html'), 'utf8');
+    const prefixedAlias = await readFile(path.join(output, 'our-team-1/index.html'), 'utf8');
+    assert.ok(prefixedAlias.includes('<meta http-equiv="refresh" content="0; url=/boblab-website/our-team/">'));
+    assert.ok(prefixedAlias.includes('href="/boblab-website/our-team/">Meet the people</a>'));
     assert.ok(pagesHtml.includes('href="/boblab-website/styles.css"'));
     assert.ok(pagesHtml.includes('src="/boblab-website/media/bob-logo-colour.png"'));
     assert.ok(pagesHtml.includes('src="/boblab-website/media/research/brain-tractography.gif"'));
-    assert.ok(pagesHtml.includes('src="/boblab-website/media/brand/banner-5.png"'));
+    assert.ok(pagesHtml.includes('src="/boblab-website/media/brand/banner-5.webp"'));
     assert.ok(pagesHtml.includes('src="/boblab-website/media/events/amazing-animals-brain-models.webp"'));
     const eventHtml = await readFile(path.join(output, 'news/amazing-animals-science-in-the-city-2026/index.html'), 'utf8');
     assert.ok(eventHtml.includes('src="/boblab-website/media/events/amazing-animals-claude-bajada.webp"'));
@@ -118,13 +127,21 @@ test('all collections build publicly while drafts and source files stay outside 
     await assert.rejects(loadContent(fixture), /ENOENT/);
     event.photos[0].src = approvedPhoto;
     await writeFile(eventPath, JSON.stringify(event));
+    for (const id of ['missing-publication', 'private-publication']) {
+      await writeFile(sitePath, JSON.stringify({ ...site, featuredPublicationId: id }));
+      await assert.rejects(loadContent(fixture), /site\.featuredPublicationId: expected a public publication ID/);
+    }
+    const legacySettings = { ...site };
+    delete legacySettings.featuredPublicationId;
+    await writeFile(sitePath, JSON.stringify(legacySettings));
+    assert.equal((await loadContent(fixture)).site.featuredPublicationId, null);
     site.homeBanner.src = '/media/../private.png';
     await writeFile(sitePath, JSON.stringify(site));
     await assert.rejects(loadContent(fixture), /local image and alt text/);
     site.homeBanner.src = '/media/missing-banner.png';
     await writeFile(sitePath, JSON.stringify(site));
     await assert.rejects(loadContent(fixture), /ENOENT/);
-    site.homeBanner.src = '/media/brand/banner-5.png';
+    site.homeBanner.src = '/media/brand/banner-5.webp';
     site.homeImage.stillSrc = 'https://example.com/remote.gif';
     await writeFile(sitePath, JSON.stringify(site));
     await assert.rejects(loadContent(fixture), /local animation, still image and alt text/);
