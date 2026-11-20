@@ -8,7 +8,7 @@
     "Our projects bring together medicine, engineering, cognitive science and law."
   ],
   "stage": "live",
-  "origin": "https://claudebajada.github.io",
+  "origin": "https://boblab.info",
   "email": "claude.bajada@um.edu.mt",
   "sourceIds": [
     "legacy-home",
@@ -19,10 +19,10 @@
     "legacy-brain-visual",
     "supplied-banner-5"
   ],
-  "lastReviewed": "2026-11-13",
+  "lastReviewed": "2026-11-20",
   "homeImage": null,
   "homeBanner": {
-    "src": "/media/brand/banner-5.png",
+    "src": "/media/brand/banner-5.webp",
     "alt": "Four cortical surface renderings in greyscale and different colour maps.",
     "width": 2257,
     "height": 420

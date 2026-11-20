@@ -120,7 +120,7 @@ export function composePages(data) {
       <section class="portfolio-section"><div class="wrap section"><div class="section-heading"><h2>Selected projects</h2></div>
         <div class="featured-projects">${featured.map(p => `<a class="featured-project" href="${projectUrl(p)}"><div><h3>${e(projectName(p))}</h3><p>${e(projectTeaser(p))}<span class="featured-status">${e(statusLabel(p))}</span></p></div>${arrow}</a>`).join('')}</div>
       </div></section>
-      <section class="wrap section"><div class="section-heading"><h2>Recent research</h2><a class="inline-link" href="/publications/">Publications and outputs ${arrow}</a></div>${featuredPaper ? paper(featuredPaper, 3) : ''}
+      <section class="wrap section"><div class="section-heading"><h2>Featured research</h2><a class="inline-link" href="/publications/">Publications and outputs ${arrow}</a></div>${featuredPaper ? paper(featuredPaper, 3) : ''}
         <div class="tool-strip"><div><h3>The Vogt-Bailey toolbox</h3><p>Open-source tools for measuring local gradients and boundaries in MRI data.</p></div><a class="inline-link" href="${sourceCode}">View the code ${arrow}</a></div>
         <div class="tool-strip"><div><h3>3D-printed brain models</h3><p>The University of Malta Magnetic Resonance Imaging Platform (UMRI) sells 3D-printed brain models. All proceeds support UMRI research efforts. Collection in Malta only.</p></div><a class="inline-link" href="https://www.um.edu.mt/platforms/umri/generalpublic/brainmodels/">Order from UMRI ${arrow}</a></div>
       </section>

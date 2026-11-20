@@ -1,7 +1,7 @@
 [
   { "from": "/", "to": "/", "action": "retain" },
   { "from": "/our-team/", "to": "/our-team/", "action": "retain" },
-  { "from": "/our-team-1/", "to": "/our-team/", "action": "redirect-301" },
+  { "from": "/our-team-1/", "to": "/our-team/", "action": "html-redirect" },
   { "from": "/projects/", "to": "/projects/", "action": "retain" },
   { "from": "/publications/", "to": "/publications/", "action": "retain" },
   { "from": "/contact-us/", "to": "/contact-us/", "action": "retain" }

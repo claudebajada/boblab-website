@@ -6,13 +6,11 @@ records and editorial discussions are maintained separately.
 
 ## sitc-amazing-animals-2026
 
-- https://scienceinthecity.org.mt/event/fur-ensic-files-cloned-11512/
-- Reviewed 2026-11-13. The organiser's Amazing Animals programme names Nate Rae
+- https://scienceinthecity.org.mt/event/amazing-animals/
+- Reviewed 2026-11-20. The organiser's Amazing Animals programme names Nate Rae
   as artist and Claude Bajada as researcher, schedules the performance
   and workshop for 6–7 November 2026, and describes interactive exploration of
-  animal intelligence. The URL retains an unrelated legacy slug; the page title
-  and content identify Amazing Animals. No precise workshop venue is asserted
-  because the organiser's listings differ.
+  animal intelligence. The organiser's listings give different workshop venues.
 
 ## owner-sitc-2026
 
@@ -226,7 +224,7 @@ Lab-confirmed names and roles: Adur Apeceche Araquistain, Intern; Maia Farrugia,
 
 ## supplied-banner-5
 
-Lab-supplied and approved four-panel cortical rendering, banner_5.png, 2257 × 420 pixels. The scientific image pixels are unchanged; the background and responsive arrangement use CSS. Reviewed 2026-11-12.
+Lab-supplied and approved four-panel cortical rendering, banner_5.png, 2257 × 420 pixels. The homepage serves a lossless WebP with identical decoded pixels. CSS controls the background and layout. Reviewed 2026-11-20.
 
 ## owner-roster-confirmation-2026-11-13
 

@@ -22,8 +22,8 @@ Permission to consult a source does not automatically authorise publishing its c
 
 The owner controls repository visibility and publication. Do not change visibility,
 deploy, or change boblab.info DNS without the owner's instruction. Publish only
-dist/, never the repository or workspace root. The GitHub Pages workflow is
-prepared for later publication. Preview mode disables indexing, not public access.
+dist/, never the repository or workspace root. The GitHub Pages workflow
+publishes the live site at https://boblab.info/. Preview mode disables indexing, not public access.
 
 ## Architecture
 

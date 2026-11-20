@@ -7,7 +7,7 @@ try {
   const routes = JSON.parse(await readFile(path.join(root, 'docs/legacy-urls.json'), 'utf8'));
   const supported = new Set(['/', '/our-team/', '/projects/', '/publications/', '/contact-us/']);
   for (const route of routes) {
-    if (!supported.has(route.to) || !['retain', 'redirect-301'].includes(route.action)) {
+    if (!supported.has(route.to) || !['retain', 'html-redirect'].includes(route.action)) {
       throw new Error(`Invalid migration mapping: ${JSON.stringify(route)}`);
     }
   }

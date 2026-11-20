@@ -16,7 +16,7 @@ Pages must use **GitHub Actions** as its build source. No npm install, server,
 database, or deployment secret is needed. Repository visibility and the account
 plan must support Pages. The workflow reads the
 actual Pages `base_url`: assets, navigation, canonical links, and sitemap work on
-`https://claudebajada.github.io/boblab-website/` and a future custom-domain root.
+`https://boblab.info/` and at a GitHub Pages project path.
 
 Build checks run for every push and pull request. Deployment is opt-in for both
 public and private repositories: enable Pages with GitHub Actions as its source,
@@ -33,13 +33,12 @@ SITE_URL=https://claudebajada.github.io/boblab-website npm run build
 Use plain `npm run build` again for the normal root-mounted local preview. Tests
 exercise both modes and reject root URLs accidentally left in a project build.
 
-`content/site.json` is in `live` mode with the GitHub Pages HTTPS origin. The
-workflow supplies the full deployed URL, including `/boblab-website`, so canonical
-links, robots.txt and sitemap.xml point to the published site. Set `stage` to
+`content/site.json` is in `live` mode with `https://boblab.info` as the default
+origin. The workflow supplies the deployed URL through `SITE_URL`. Set `stage` to
 `preview` for a future non-indexed preview; this is not an access restriction.
 
-`/our-team-1/` is retained as an HTML alias with a link and canonical reference to
-`/our-team/`. GitHub Pages cannot emit custom 301 rules. The custom 404 page
+`/our-team-1/` forwards immediately to `/our-team/` using HTML refresh, with
+a manual link and a canonical reference to the same destination. The custom 404 page
 provides a home link with the correct deployment prefix.
 
 The workflow supports the site at repository root. It can also find a nested

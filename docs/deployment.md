@@ -2,7 +2,7 @@
 
 The selected host is GitHub Pages, using https://github.com/claudebajada/boblab-website.
 See [GitHub Pages operations](github-pages.md) for the normal update workflow.
-The existing boblab.info domain is not changed by this deployment.
+The live site is https://boblab.info/.
 
 ## Build contract
 
@@ -22,12 +22,12 @@ uses loopback only and is not a production server. Do not publish the repo,
 docs or the parent workspace as the document root. Internal notes, real content
 drafts, raw uploads, and original archives belong outside the repository.
 
-## Domain migration later
+## Custom domain and legacy URLs
 
-Before replacing boblab.info, confirm the roster, update selected publication
-and project metadata, and review current images and permissions. Back up the old
-site and inventory WordPress URLs; legacy-urls.json is the initial map.
-Configure the custom domain in Pages, set the required DNS, verify HTTPS and the
-old URL aliases, then enable indexing via stage: live when the owner is ready.
-GitHub Pages does not provide custom HTTP 301 rules; the old team URL is a static
-compatibility page. Keep Git history and the previous deployment available for rollback.
+The default build uses `https://boblab.info` for canonical links, the sitemap
+and structured data. Set `SITE_URL` to test a different host or path.
+GitHub Pages controls HTTP-to-HTTPS redirects through its **Enforce HTTPS** setting.
+
+The old WordPress team URL, `/our-team-1/`, serves an HTML page that immediately
+forwards to `/our-team/`. It also includes a link for browsers that disable
+automatic forwarding. The retained WordPress routes are listed in `legacy-urls.json`.
