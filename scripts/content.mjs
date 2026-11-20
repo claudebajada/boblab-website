@@ -114,8 +114,8 @@ async function checkPublicFiles(directory) {
 export async function loadContent(projectRoot = root) {
   const registry = await readFile(path.join(projectRoot, 'docs/sources.md'), 'utf8');
   const sources = new Set([...registry.matchAll(/^## ([a-z0-9-]+)$/gm)].map(match => match[1]));
-  const site = JSON.parse(await readFile(path.join(projectRoot, 'content/site.json'), 'utf8'));
-  keys(site, ['name', 'expandedName', 'institution', 'description', 'introduction', 'stage', 'origin', 'email', 'sourceIds', 'lastReviewed', 'homeImage', 'homeBanner'], 'site');
+  const site = { featuredPublicationId: null, ...JSON.parse(await readFile(path.join(projectRoot, 'content/site.json'), 'utf8')) };
+  keys(site, ['name', 'expandedName', 'institution', 'description', 'introduction', 'stage', 'origin', 'email', 'sourceIds', 'lastReviewed', 'homeImage', 'homeBanner', 'featuredPublicationId'], 'site');
   for (const key of ['name', 'expandedName', 'institution', 'description']) assert(text(site[key]), `site: ${key} required`);
   assert(strings(site.introduction) && site.introduction.length > 0, 'site: introduction required');
   assert(['scaffold', 'preview', 'live'].includes(site.stage), 'site: stage must be scaffold, preview, or live');
@@ -151,6 +151,8 @@ export async function loadContent(projectRoot = root) {
   const figures = [site.homeImage, ...result.projects.flatMap(p => p.figures), ...result.news.flatMap(n => n.photos)].filter(Boolean);
   for (const figure of figures) assert((await stat(path.join(projectRoot, 'public', figure.src))).isFile(), `${figure.src}: figure image missing`);
   const publicationIds = new Set(result.publications.filter(p => !p.draft).map(p => p.id));
+  assert(site.featuredPublicationId === null || publicationIds.has(site.featuredPublicationId),
+    `site.featuredPublicationId: expected a public publication ID or null, got ${JSON.stringify(site.featuredPublicationId)}`);
   const dois = new Set();
   for (const p of result.publications.filter(p => !p.draft && p.doi)) {
     const doi = p.doi.toLowerCase();

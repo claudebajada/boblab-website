@@ -107,6 +107,26 @@ test('news policy rejects oversized summaries, galleries, link lists and invalid
   validate();
 });
 
+test('homepage features the chosen publication or the first public journal article in bibliography order', async () => {
+  const journal = { ...await template('publication'), draft: false, year: 2025 };
+  const publications = [
+    { ...journal, id: 'later-title', title: 'Zebra study' },
+    { ...journal, id: 'earlier-title', title: 'Atlas study' },
+    { ...journal, id: 'draft-journal', year: 2027, draft: true },
+    { ...journal, id: 'new-preprint', year: 2026, kind: 'preprint' },
+  ];
+  const site = { introduction: [], featuredPublicationId: 'new-preprint' };
+  const data = { site, publications, people: [], projects: [], news: [] };
+  const featuredIds = () => [...composePages(data)[0].body.matchAll(/<article class="paper" id="([^"]+)"/g)].map(match => match[1]);
+  assert.deepEqual(featuredIds(), ['new-preprint']);
+  site.featuredPublicationId = 'later-title';
+  assert.deepEqual(featuredIds(), ['later-title']);
+  site.featuredPublicationId = null;
+  assert.deepEqual(featuredIds(), ['earlier-title']);
+  data.publications = publications.filter(p => p.kind === 'preprint' || p.draft);
+  assert.deepEqual(featuredIds(), []);
+});
+
 test('homepage caps combined news/events at three, sorts dates, and keeps older story URLs', async () => {
   const example = await template('news');
   const news = [

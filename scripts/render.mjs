@@ -105,7 +105,9 @@ export function composePages(data) {
   const sourceCode = 'https://github.com/VBIndex/py_vb_toolbox';
   const contact = site.email ? `<a class="email-link" href="mailto:${e(site.email)}">${e(site.email)} ${arrow}</a>` : '<p>Contact details will be available here shortly.</p>';
   const featured = ['tarragon', 'brian', 'sara', 'mohh-malti'].map(id => projects.find(p => p.id === id)).filter(Boolean);
-  const featuredPaper = papers.find(p => p.id === 'sign-phantom-preprint') || papers.find(p => p.kind === 'journal');
+  const featuredPaper = site.featuredPublicationId == null
+    ? papers.find(p => p.kind === 'journal')
+    : papers.find(p => p.id === site.featuredPublicationId);
   const groups = publicationGroups.filter(([kind]) => papers.some(p => p.kind === kind));
   const researchHeading = '<h2>Mapping brain organisation</h2>';
   const pages = [

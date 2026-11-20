@@ -90,6 +90,20 @@ and origin, and generate a sitemap. Scaffold and preview builds emit noindex and
 disallow crawling. GitHub Pages supplies the full `SITE_URL` during CI.
 That prevents accidental indexing, not access; a public preview is still public.
 
+### Changing the featured research
+
+Set `featuredPublicationId` in `content/site.json` to the ID of the output to
+feature. The homepage reads its title, author list, publication type and links
+from the same record as the Publications page. For example, setting the field
+to `brian-framework-preprint` features the BRIAN preprint.
+
+An explicit selection stays in place as other outputs are added. An unknown ID
+or a draft fails validation. Set the field to `null` for automatic selection:
+the homepage takes the first public journal article in bibliography order
+(year descending, then title alphabetically). Older settings without the field
+use the same rule. With no public journal articles, the automatic mode omits the
+citation.
+
 ## Assets
 
 Everything in `public/` is copied to `dist/` independently of draft flags. Keep

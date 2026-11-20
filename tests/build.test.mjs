@@ -17,6 +17,7 @@ test('all collections build publicly while drafts and source files stay outside 
     const site = JSON.parse(await readFile(sitePath, 'utf8'));
     Object.assign(site, {
       stage: 'live', origin: 'https://lab.example', email: 'lab@example.com',
+      featuredPublicationId: 'example-publication',
       homeImage: { src: '/media/research/brain-tractography.gif', stillSrc: '/media/research/legacy-brain-still.webp', alt: 'Brain surface and fibre pathways', width: 578, height: 578 },
       homeBanner: { src: '/media/brand/banner-5.webp', alt: 'Four cortical surface renderings', width: 2257, height: 420 },
     });
@@ -41,6 +42,7 @@ test('all collections build publicly while drafts and source files stay outside 
       assert.ok(html.includes('rel="canonical"'));
     }
     const homepage = await readFile(path.join(output, 'index.html'), 'utf8');
+    assert.ok(homepage.includes('<article class="paper" id="example-publication">'));
     const homeSchema = JSON.parse(homepage.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1] ?? 'null');
     assert.equal(homeSchema['@graph'][0]['@type'], 'ResearchOrganization');
     assert.equal(homeSchema['@graph'][1]['@type'], 'WebSite');
@@ -125,6 +127,14 @@ test('all collections build publicly while drafts and source files stay outside 
     await assert.rejects(loadContent(fixture), /ENOENT/);
     event.photos[0].src = approvedPhoto;
     await writeFile(eventPath, JSON.stringify(event));
+    for (const id of ['missing-publication', 'private-publication']) {
+      await writeFile(sitePath, JSON.stringify({ ...site, featuredPublicationId: id }));
+      await assert.rejects(loadContent(fixture), /site\.featuredPublicationId: expected a public publication ID/);
+    }
+    const legacySettings = { ...site };
+    delete legacySettings.featuredPublicationId;
+    await writeFile(sitePath, JSON.stringify(legacySettings));
+    assert.equal((await loadContent(fixture)).site.featuredPublicationId, null);
     site.homeBanner.src = '/media/../private.png';
     await writeFile(sitePath, JSON.stringify(site));
     await assert.rejects(loadContent(fixture), /local image and alt text/);
